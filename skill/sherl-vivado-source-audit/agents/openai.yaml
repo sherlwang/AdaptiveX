@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vivado来源与依赖审计"
+  short_description: "核验冻结参考、工程来源和本地依赖，区分字节变化与必要路径迁移。"
+  default_prompt: "使用 $sherl-vivado-source-audit 核验这两份Vivado工程的来源、冻结参考和路径依赖，保持源文件不变。"

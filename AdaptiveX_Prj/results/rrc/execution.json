@@ -1,0 +1,12 @@
+{
+  "case": "rrc",
+  "status": "PASS",
+  "implementation": "delivered structural functional netlists",
+  "details": {
+    "status": "PASS",
+    "p_values": 3,
+    "output_words": 252,
+    "integer_mismatches": 0
+  },
+  "elapsed_seconds": 32.74
+}

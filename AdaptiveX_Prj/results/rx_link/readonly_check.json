@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "files_checked": 28,
+  "same_file_inventory": true,
+  "changed_content": [],
+  "changed_modification_time": [],
+  "metrics_status": "PASS",
+  "maximum_absolute_metric_differences": {
+    "fde_mer_db": 0,
+    "nlms_mer_db": 0,
+    "hdl_vs_float_fde_db": 0,
+    "mean_fde_mer_db": 0,
+    "mean_nlms_mer_db": 0,
+    "minimum_hdl_vs_float_fde_db": 0
+  },
+  "invocation": {
+    "executable": "matlab",
+    "flags": [
+      "-singleCompThread",
+      "-batch"
+    ],
+    "shell_login": true,
+    "explicit_environment_overrides": null,
+    "runtime_elevated": true
+  },
+  "scope": "Read-only MATLAB recomputation on delivered recorded receiver outputs",
+  "verify_link_sha256": "39e613473b43e31d500e3a2a9ccacc4b2e3dd1afd8d024a74712c5f463a72efd"
+}

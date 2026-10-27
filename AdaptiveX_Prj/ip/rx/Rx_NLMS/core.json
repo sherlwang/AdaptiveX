@@ -1,0 +1,31 @@
+{
+  "side": "rx",
+  "name": "Rx_NLMS",
+  "generic": {
+    "DYNAMIC_MODE": 1
+  },
+  "edf_bytes": 15230553,
+  "sim_bytes": 6331349,
+  "files": {
+    "core.edf": {
+      "path": "core.edf.gz",
+      "sha256": "17efb3173e16ccb4497375d31f9e5ea8b4851e522344ebb023a553b4d9ef19b3",
+      "raw_sha256": "0e421810f9d91fbe759c35b70e2df4bc22ff585c982879b88810e017cfc9907f",
+      "raw_bytes": 15230553
+    },
+    "core_sim.v": {
+      "path": "core_sim.v.gz",
+      "sha256": "1d56855f7ae6a3078a2e1a1e17e75686c152b3abfc5431dc6274c31d878ce00b",
+      "raw_sha256": "0339ec3e0cfd63806d7305fb1335a72535c0dea3d6cd526b54d468dc2b43c5ff",
+      "raw_bytes": 6331349
+    },
+    "core_stub.v": {
+      "path": "core_stub.v",
+      "sha256": "5ce798039ce32cbfe974eb8d0940de45bf5488c37d9833f2fae0470460b84371",
+      "raw_sha256": "5ce798039ce32cbfe974eb8d0940de45bf5488c37d9833f2fae0470460b84371",
+      "raw_bytes": 1788
+    }
+  },
+  "part": "xczu47dr-ffve1156-2-i",
+  "tool_version": "Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021"
+}

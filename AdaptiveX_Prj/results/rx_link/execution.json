@@ -1,0 +1,29 @@
+{
+  "case": "rx_link",
+  "status": "PASS",
+  "implementation": "delivered structural functional netlists",
+  "details": {
+    "coded": {
+      "bits": 48960,
+      "bit_errors": 0,
+      "ber": 0.0
+    },
+    "decoded": {
+      "bits": 36864,
+      "bit_errors": 0,
+      "ber": 0.0
+    },
+    "counts": {
+      "frames": 16,
+      "ldpc_blocks": 96,
+      "ldpc_failed_checks": 0,
+      "ai_recommendations": 12,
+      "overflow_fast": 0,
+      "overflow_ldpc": 0,
+      "ldpc_mode_error": 0,
+      "acquire_error": 0
+    },
+    "status": "PASS"
+  },
+  "elapsed_seconds": 7181.43
+}

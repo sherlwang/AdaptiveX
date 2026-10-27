@@ -1,0 +1,32 @@
+
+****** xsim v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/rx_link/xsim_script.tcl
+# xsim {rx_link} -autoloadwcfg -runall
+Time resolution is 1 fs
+run -all
+RX_FRAME 0 at clock 6315
+RX_FRAME 1 at clock 8475
+RX_FRAME 2 at clock 10635
+RX_FRAME 3 at clock 12795
+RX_FRAME 4 at clock 14955
+RX_FRAME 5 at clock 17115
+RX_FRAME 6 at clock 19275
+RX_FRAME 7 at clock 21435
+RX_FRAME 8 at clock 23595
+RX_FRAME 9 at clock 25755
+RX_FRAME 10 at clock 27915
+RX_FRAME 11 at clock 30075
+RX_FRAME 12 at clock 32235
+RX_FRAME 13 at clock 34395
+RX_FRAME 14 at clock 36555
+RX_FRAME 15 at clock 38715
+RX_EXECUTION_COMPLETE frames=16 blocks=96; run MATLAB verification for bit errors and MER
+$finish called at time : 247221654372 fs : File "sim/tb_rx_link.sv" Line 132
+run: Time (s): cpu = 00:00:00.71 ; elapsed = 01:55:47 . Memory (MB): peak = 2712.562 ; gain = 0.000 ; free physical = 1950 ; free virtual = 37956
+exit
+INFO: xsimkernel Simulation Memory Usage: 3390704 KB (Peak: 3423468 KB), Simulation CPU Usage: 6902580 ms
+INFO: [Common 17-206] Exiting xsim at Mon Oct 26 14:07:03 2026...

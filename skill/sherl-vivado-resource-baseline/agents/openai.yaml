@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vivado资源与时序基准"
+  short_description: "采集完整模块资源与时序基准，对比优化前后并绑定源码和产物证据。"
+  default_prompt: "使用 $sherl-vivado-resource-baseline 为已完成的Vivado实现建立全层级资源与时序基准，并与指定旧版比较。"

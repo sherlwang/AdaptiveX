@@ -1,0 +1,38 @@
+{
+  "side": "rx",
+  "name": "Rx_FDE_Core_8",
+  "generic": {
+    "DYNAMIC_MODE": 1
+  },
+  "edf_bytes": 150749352,
+  "sim_bytes": 63076016,
+  "files": {
+    "core.edf": {
+      "path": "core.edf.gz",
+      "sha256": "ac467682f84e5a89e63a9441f7270e477364227da5abdc7e200b375003a2f218",
+      "raw_sha256": "ac821ca5fb687df48d82d1301203eb5c308f2fc5ec3507af620a71618f9a3620",
+      "raw_bytes": 150749352
+    },
+    "core_sim.v": {
+      "path": "core_sim.v.gz",
+      "sha256": "56cacaa6c54969273d01bf26962754f3570e05ac316070c85f2bb8577fd48482",
+      "raw_sha256": "e8b7fa3bc7db6a293fb88eda8ed47cc1abc94ff98c1e33829cb71f54317b4c22",
+      "raw_bytes": 63076016
+    },
+    "core_stub.v": {
+      "path": "core_stub.v",
+      "sha256": "49da522cc71e31a6fd8e871901c789ade8c9751a5ce9075e350fff70f5279ac3",
+      "raw_sha256": "49da522cc71e31a6fd8e871901c789ade8c9751a5ce9075e350fff70f5279ac3",
+      "raw_bytes": 1808
+    }
+  },
+  "simulation_helper_namespace": "adaptivex_fde__",
+  "namespaced_structural_helpers": [
+    "xpm_fifo_base",
+    "xpm_fifo_sync",
+    "xpm_memory_base",
+    "xpm_memory_base__parameterized0"
+  ],
+  "part": "xczu47dr-ffve1156-2-i",
+  "tool_version": "Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021"
+}

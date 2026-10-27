@@ -1,0 +1,41 @@
+{
+  "side": "rx",
+  "status": "application_build_pass",
+  "tool_version_raw": "xsct 2021.2.0\nSW Build 0 on \nCopyright 1986-2020 Xilinx, Inc. All Rights Reserved.",
+  "processor": "psu_cortexa53_0",
+  "os": "standalone",
+  "arch": "64-bit",
+  "compiler_comment": "String dump of section '.comment':\n  [     0]  GCC: (GNU) 10.2.0",
+  "actual_compile_define_RFDC_PROFILE": 1,
+  "board_execution": "not_performed",
+  "elf": {
+    "path": "validation/vitis_rx/artifacts/rx_init.elf",
+    "bytes": 2474576,
+    "sha256": "c84960564c5a4c41c1fde6da9cc343705ff929af55474336bfcc3b507407a215"
+  },
+  "application_elf": {
+    "path": "validation/vitis_rx/rf_rx_init/Debug/rf_rx_init.elf",
+    "bytes": 2474576,
+    "sha256": "c84960564c5a4c41c1fde6da9cc343705ff929af55474336bfcc3b507407a215"
+  },
+  "exported_elf_equals_application_elf": true,
+  "source_directory": "software/board/rx",
+  "imported_source_directory": "validation/vitis_rx/rf_rx_init/src",
+  "source_files": 21,
+  "source_tree_hash_method": "SHA256 of UTF-8 sorted lines: per-file SHA256, two spaces, POSIX relative path, LF; all files beneath role source directory",
+  "source_tree_sha256": "15bca70d6f8b0594dde831f51e1ac70128c61c13a61ccec98493b71a8f0b9fa1",
+  "imported_expected_source_tree_sha256": "15bca70d6f8b0594dde831f51e1ac70128c61c13a61ccec98493b71a8f0b9fa1",
+  "all_delivered_source_files_equal_imported_build_sources": true,
+  "xsa_used_by_build": {
+    "path": "validation/rx_bit/project/rx_hardware.xsa",
+    "bytes": 741163,
+    "sha256": "5bf4646deacf32b05075c8d8daeb171c08b4d0c4ac9c16a23da86861e7d24a0b"
+  },
+  "platform_imported_xsa": {
+    "path": "validation/vitis_rx/rf_rx_platform/hw/rx_hardware.xsa",
+    "bytes": 741163,
+    "sha256": "5bf4646deacf32b05075c8d8daeb171c08b4d0c4ac9c16a23da86861e7d24a0b"
+  },
+  "hardware_handoff_equals_platform_import": true,
+  "binary_artifacts_in_repository": false
+}

@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "implementation": "delivered structural functional netlists",
+  "testbench_sha256": "2129e1cdb95a04a51da044d5a4272349d9338bf5983c2d3111a45836a947c8a8",
+  "encoder_assertions": [
+    "encoded_p == p.mem[encoded_count/255]",
+    "encoded_m == m.mem[encoded_count/255]",
+    "encoded_width == width.mem[encoded_count/255]"
+  ],
+  "decoder_assertions": [
+    "decoded_width == width.mem[decoded_count/192]"
+  ],
+  "modes": [
+    {
+      "P": 2,
+      "M": 0,
+      "width": 2,
+      "blocks": 6
+    },
+    {
+      "P": 2,
+      "M": 1,
+      "width": 4,
+      "blocks": 6
+    },
+    {
+      "P": 2,
+      "M": 2,
+      "width": 8,
+      "blocks": 6
+    },
+    {
+      "P": 4,
+      "M": 0,
+      "width": 4,
+      "blocks": 6
+    },
+    {
+      "P": 4,
+      "M": 1,
+      "width": 8,
+      "blocks": 6
+    },
+    {
+      "P": 4,
+      "M": 2,
+      "width": 16,
+      "blocks": 6
+    },
+    {
+      "P": 8,
+      "M": 0,
+      "width": 8,
+      "blocks": 6
+    },
+    {
+      "P": 8,
+      "M": 1,
+      "width": 16,
+      "blocks": 6
+    },
+    {
+      "P": 8,
+      "M": 2,
+      "width": 32,
+      "blocks": 6
+    }
+  ],
+  "blocks": 54,
+  "encoded_words_checked": 13770,
+  "decoded_words_checked": 10368,
+  "encoded_bits_checked": 149940,
+  "decoded_bits_checked": 112896,
+  "bit_errors": 0,
+  "elapsed_seconds": 1214.37,
+  "command": "python3 sim/run.py codec --output validation/codec --vivado-root /path/to/Vivado/2021.2"
+}

@@ -1,0 +1,18 @@
+
+****** xsim v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/rrc/xsim_script.tcl
+# xsim {rrc} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+RRC_MODE_PASS P=2 words=144
+RRC_MODE_PASS P=4 words=72
+RRC_MODE_PASS P=8 words=36
+RRC_ALL_PASS MATLAB convolution: three interpolation factors
+$finish called at time : 1162392 ps : File "<verification-work>/package/sim/tb_rrc.sv" Line 66
+run: Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:08 . Memory (MB): peak = 2904.562 ; gain = 0.000 ; free physical = 13372 ; free virtual = 58098
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Oct 26 11:59:24 2026...

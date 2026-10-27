@@ -1,0 +1,61 @@
+{
+  "scope": "Actual complete public functional-netlist receiver capture and MATLAB comparison",
+  "files": {
+    "coded.txt": {
+      "bytes": 425340,
+      "sha256": "b3a1dee31eeb51eed39954e80f26bad3d9526b7fae64923e8fa043a5c67ebacf"
+    },
+    "decoded.txt": {
+      "bytes": 202752,
+      "sha256": "562a2c2d14f0941bd6d49ff08953e56f0eecd1d4cde77638f5b888be29371cef"
+    },
+    "window.txt": {
+      "bytes": 2306048,
+      "sha256": "3485ab63f2a2e5da3b030de3abf99378e24aef104a11b052d92fbb25365e0356"
+    },
+    "fde.txt": {
+      "bytes": 1722780,
+      "sha256": "204167f413eefae68a3b67522588e6ef82f4c5a8ff011fcf8625a41913f5d40c"
+    },
+    "nlms.txt": {
+      "bytes": 1722780,
+      "sha256": "a756789ca09f6a4f46f4117c73d19de04cdc405886f5bdd78d2644f9b7209304"
+    },
+    "events.txt": {
+      "bytes": 476,
+      "sha256": "4fde05eda2f3345c55e8c7c5a17e054c3d21ddc0d2796c8f9478d0ce5059ab50"
+    },
+    "counts.json": {
+      "bytes": 152,
+      "sha256": "36e3f90525f01679870dfc4ebd29455c38dfa60da0d5339a4e51b04c47354063"
+    },
+    "bit_results.json": {
+      "bytes": 542,
+      "sha256": "1ed67fff3886a82345d8b4386ed8284519f4466719954c738a030318afeddf9c"
+    },
+    "execution.json": {
+      "bytes": 583,
+      "sha256": "bac2bddc21c6ebbac1912ecb7e5c0fe8d60dd83224df9aa1782c1c643a4e4e89"
+    },
+    "matlab_verification.json": {
+      "bytes": 1683,
+      "sha256": "1e2e3da62ace230e4b95ca18801c0863fde8f281f3471ec330e2fb4923de494b"
+    },
+    "simulator_output.txt": {
+      "raw_log_sha256": "5f6cbbd482c21a61108c26acd23790a6bf11b4e8ed252e2a1949c68a5d1a5c82",
+      "path_normalization_only": true
+    },
+    "matlab_output.txt": {
+      "raw_log_sha256": "d46c470b8ae68cabb71c7615f8d2eb88d1d417ed518ecd91f9dff0eedd74b8eb",
+      "path_normalization_only": true
+    },
+    "postcheck_output.txt": {
+      "raw_log_sha256": "1ed67fff3886a82345d8b4386ed8284519f4466719954c738a030318afeddf9c",
+      "path_normalization_only": true
+    }
+  },
+  "plot_inspected": true,
+  "matlab_version": "R2026b",
+  "simulation_payloads": "See ../../ip/rx and ../input_binding.json",
+  "channel": "25dB real ADC input SNR;20kHz CFO;7 ADC-sample delay;fixed offset0"
+}

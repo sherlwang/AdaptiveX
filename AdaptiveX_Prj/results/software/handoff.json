@@ -1,0 +1,44 @@
+{
+  "tool": "Vitis 2021.2",
+  "method": "unmodified build_app.tcl creates platform, BSP and application from source in fresh workspaces",
+  "board_execution": "not_performed",
+  "recipe_sha256": "a008e1cf4bf56e870d59b96f747ce449ee54920340ded96a7174cc8c0bc4f5eb",
+  "roles": [
+    {
+      "role": "tx",
+      "status": "fresh_source_build_pass",
+      "source_file_count": 21,
+      "source_files_match_package": true,
+      "built_source_files_match_inputs": true,
+      "RFDC_PROFILE": 0,
+      "xsa_sha256": "d63467bcb6ac323c40763779268dda7088848da41cd7e97e94b32c994240934e",
+      "xsa_size": 5503651,
+      "xsa_origin": "unchanged native with-bit export of corresponding public hardware build",
+      "embedded_bit_member": "tx_with_bit.bit",
+      "embedded_bit_sha256": "6b91f51637b52cdab673c58779f5e1dc94eaaecf58c98b161930aec487593386",
+      "elf_sha256": "e4a7dc65e522eb3d6a2860d5b7203795802c9e7738c75cf77d2de0fefc6b8e45",
+      "elapsed_seconds": 27.5,
+      "returncode": 0,
+      "hardware_file": "software/board/hardware/tx_hardware.xsa",
+      "elf_included": false
+    },
+    {
+      "role": "rx",
+      "status": "fresh_source_build_pass",
+      "source_file_count": 21,
+      "source_files_match_package": true,
+      "built_source_files_match_inputs": true,
+      "RFDC_PROFILE": 1,
+      "xsa_sha256": "1b2cbdf8e6bc1325765621a47aaf3e42a1ff16b20424ad90adbceceff98feb83",
+      "xsa_size": 12058912,
+      "xsa_origin": "unchanged native with-bit export of corresponding public hardware build",
+      "embedded_bit_member": "rx_with_bit.bit",
+      "embedded_bit_sha256": "19a62288a09be12524643b31bd17c2966b17051ca674e7c0144d4c158b57e0b4",
+      "elf_sha256": "7f007f4427c8cf46e3e061b1b73cc3a4f985138286d9cf6e6b82fac6e59d7035",
+      "elapsed_seconds": 28.1,
+      "returncode": 0,
+      "hardware_file": "software/board/hardware/rx_hardware.xsa",
+      "elf_included": false
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "format": 1,
+  "scope": "Completed Vivado project delivery; paths are relative to AdaptiveX_Prj",
+  "statement": "出于核心技术保护考虑，本次提供部分功能代码；技术文档及演示中的性能结果来自源工程。",
+  "projects": {
+    "tx": {
+      "project": "Tx/project/tx.xpr",
+      "origin": "Validated source-input rebuild; existing completed runs copied into this delivery",
+      "tool_version": "2021.2",
+      "part": "xczu47dr-ffve1156-2-i",
+      "read_only_open": {
+        "project": true,
+        "synthesized_design": true,
+        "implemented_design": true
+      },
+      "project_missing_file_count": 0,
+      "project_external_file_count": 0,
+      "runs": {
+        "synth_1": {
+          "status": "synth_design Complete!",
+          "progress": "100%",
+          "needs_refresh": true
+        },
+        "impl_1": {
+          "status": "write_bitstream Complete!",
+          "progress": "100%",
+          "needs_refresh": false
+        }
+      },
+      "implementation_black_box_count": 0,
+      "artifacts": {
+        "bitstream": {
+          "path": "Tx/project/tx.runs/impl_1/adaloop_top.bit",
+          "bytes": 34437473,
+          "sha256": "6b91f51637b52cdab673c58779f5e1dc94eaaecf58c98b161930aec487593386",
+          "equals_original_and_public_results": true
+        },
+        "debug_probes": {
+          "path": "Tx/project/tx.ltx",
+          "bytes": 603331,
+          "sha256": "77adff12959cd2f45996d62037b27a8cab9a8bfd18c9e6cc9a640896da1dca31",
+          "equals_original_and_public_results": true
+        },
+        "hardware_handoff_no_bit": {
+          "path": "Tx/project/tx_hardware.xsa",
+          "bytes": 741164,
+          "sha256": "36dad753acd9348ff54e06bd29ae3b9698a3aacdcb97c5ee0f306586443f16fe",
+          "equals_original_and_public_results": true
+        },
+        "hardware_handoff_with_bit": {
+          "path": "Tx/project/tx_with_bit.xsa",
+          "bytes": 5503651,
+          "sha256": "d63467bcb6ac323c40763779268dda7088848da41cd7e97e94b32c994240934e",
+          "equals_original_and_public_results": true
+        }
+      },
+      "checkpoints": [
+        {
+          "path": "Tx/project/tx.runs/synth_1/adaloop_top.dcp",
+          "bytes": 83168624,
+          "sha256": "9eff6631bc69eb74dad770d8f74f3109e6e9be783c376af9b5420e781ab50b61",
+          "equals_original": true
+        },
+        {
+          "path": "Tx/project/tx.runs/synth_1/design_1.dcp",
+          "bytes": 83168624,
+          "sha256": "9eff6631bc69eb74dad770d8f74f3109e6e9be783c376af9b5420e781ab50b61",
+          "equals_original": true
+        },
+        {
+          "path": "Tx/project/tx.runs/impl_1/adaloop_top_opt.dcp",
+          "bytes": 75003350,
+          "sha256": "a0f2171f9a74966e04e9dfb307b1b28d9866655b10db2eca3afaa5d5bec342b4",
+          "equals_original": true
+        },
+        {
+          "path": "Tx/project/tx.runs/impl_1/adaloop_top_physopt.dcp",
+          "bytes": 117756050,
+          "sha256": "c9b9bc9695265f6bb77d9e7148eb448664a41253cb9a5cb397c42a5306ec409e",
+          "equals_original": true
+        },
+        {
+          "path": "Tx/project/tx.runs/impl_1/adaloop_top_placed.dcp",
+          "bytes": 117751193,
+          "sha256": "df99bd48f8888316ec6ed3edd6b320440144a600ca087928dbcc9089a9e4e2b2",
+          "equals_original": true
+        },
+        {
+          "path": "Tx/project/tx.runs/impl_1/adaloop_top_routed.dcp",
+          "bytes": 140412958,
+          "sha256": "3e2934e4031ea3ee15a086b55528c4b5fc904b812500cd5671674cf2236e3174",
+          "equals_original": true
+        }
+      ],
+      "source_artifacts_unchanged": true,
+      "copied_files_unchanged_during_read_only_validation": true
+    },
+    "rx": {
+      "project": "Rx/project/rx.xpr",
+      "origin": "Validated source-input rebuild; existing completed runs copied into this delivery",
+      "tool_version": "2021.2",
+      "part": "xczu47dr-ffve1156-2-i",
+      "read_only_open": {
+        "project": true,
+        "synthesized_design": true,
+        "implemented_design": true
+      },
+      "project_missing_file_count": 0,
+      "project_external_file_count": 0,
+      "runs": {
+        "synth_1": {
+          "status": "synth_design Complete!",
+          "progress": "100%",
+          "needs_refresh": true
+        },
+        "impl_1": {
+          "status": "write_bitstream Complete!",
+          "progress": "100%",
+          "needs_refresh": false
+        }
+      },
+      "implementation_black_box_count": 0,
+      "artifacts": {
+        "bitstream": {
+          "path": "Rx/project/rx.runs/impl_1/adaloop_top.bit",
+          "bytes": 34437473,
+          "sha256": "19a62288a09be12524643b31bd17c2966b17051ca674e7c0144d4c158b57e0b4",
+          "equals_original_and_public_results": true
+        },
+        "debug_probes": {
+          "path": "Rx/project/rx.ltx",
+          "bytes": 108645,
+          "sha256": "d52769608d5f592f92f320519f6c85fb091a9f40bb27242cbd4da7241280cca1",
+          "equals_original_and_public_results": true
+        },
+        "hardware_handoff_no_bit": {
+          "path": "Rx/project/rx_hardware.xsa",
+          "bytes": 741163,
+          "sha256": "5bf4646deacf32b05075c8d8daeb171c08b4d0c4ac9c16a23da86861e7d24a0b",
+          "equals_original_and_public_results": true
+        },
+        "hardware_handoff_with_bit": {
+          "path": "Rx/project/rx_with_bit.xsa",
+          "bytes": 12058912,
+          "sha256": "1b2cbdf8e6bc1325765621a47aaf3e42a1ff16b20424ad90adbceceff98feb83",
+          "equals_original_and_public_results": true
+        }
+      },
+      "checkpoints": [
+        {
+          "path": "Rx/project/rx.runs/synth_1/adaloop_top.dcp",
+          "bytes": 174191506,
+          "sha256": "0ece891b1c1ff39d2e8f5fcd156f7731459b502faba99d866a9def61e68858cb",
+          "equals_original": true
+        },
+        {
+          "path": "Rx/project/rx.runs/synth_1/design_1.dcp",
+          "bytes": 174191506,
+          "sha256": "0ece891b1c1ff39d2e8f5fcd156f7731459b502faba99d866a9def61e68858cb",
+          "equals_original": true
+        },
+        {
+          "path": "Rx/project/rx.runs/impl_1/adaloop_top_opt.dcp",
+          "bytes": 168783000,
+          "sha256": "2c5effe2ba21c61789bcb232761f869e5048c897aa8181ca05bab98c71190452",
+          "equals_original": true
+        },
+        {
+          "path": "Rx/project/rx.runs/impl_1/adaloop_top_physopt.dcp",
+          "bytes": 277881317,
+          "sha256": "b4fb81c32bb0223b6200ac0776386c066d35508241cd0b58521a25658f8e03f2",
+          "equals_original": true
+        },
+        {
+          "path": "Rx/project/rx.runs/impl_1/adaloop_top_placed.dcp",
+          "bytes": 279971704,
+          "sha256": "e9b1f69898ed26d811556f372fd291a4d7fdbafeb19976fb678e0ee6114727d9",
+          "equals_original": true
+        },
+        {
+          "path": "Rx/project/rx.runs/impl_1/adaloop_top_postroute_physopt.dcp",
+          "bytes": 346431471,
+          "sha256": "6ddbf0987b67a93342a7eea9c8ef2ac29d130cf2ad2e6bac56fa92a47f57f472",
+          "equals_original": true
+        },
+        {
+          "path": "Rx/project/rx.runs/impl_1/adaloop_top_routed.dcp",
+          "bytes": 346427608,
+          "sha256": "bc4e843e83fefdd41cc2dd98617330b78313a5a631262421799184c95c5da1df",
+          "equals_original": true
+        }
+      ],
+      "source_artifacts_unchanged": true,
+      "copied_files_unchanged_during_read_only_validation": true
+    }
+  },
+  "validation_notes": [
+    "Both synthesis and implementation runs retain their original completed 100% status.",
+    "synth_1 NEEDS_REFRESH=1 and impl_1 NEEDS_REFRESH=0 were also verified in both original release projects; these flags were preserved.",
+    "Synthesis contains only the Vivado dbg_hub_CV debug hub as a black box; implementation has zero black boxes.",
+    "Read-only IP/debug-constraint warnings remain visible in the raw verification logs.",
+    "No synthesis, implementation, reset_run or write_bitstream operation was performed."
+  ],
+  "copy_totals": {
+    "files": 2521,
+    "bytes": 4588357797
+  },
+  "vitis_workspace": {
+    "path": "../vitis_workspace",
+    "source": "SubmissionProjects/vitis_new",
+    "copy_status": "PASS",
+    "files": 4263,
+    "bytes": 216293156,
+    "copy_inventory_sha256": "687266a3e29f6367bf99e48a3ab9f2435c151d3c1eed72f423d1e845f9cb79a0",
+    "workspace_build_performed": false
+  },
+  "new_synthesis_or_implementation_performed_during_copy": false
+}

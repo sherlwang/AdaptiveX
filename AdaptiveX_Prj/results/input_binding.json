@@ -1,0 +1,426 @@
+{
+  "scope": "Match public hardware inputs to the actual public-only build; distinguish tool-generated BD/XCI metadata from byte-identical HDL/constraints/ROM/hook files",
+  "status": "PASS",
+  "hardware_files_checked": {
+    "tx": 95,
+    "rx": 86
+  },
+  "core_files_checked": 18,
+  "mismatches": [],
+  "byte_identical_hardware_files": 173,
+  "tool_regenerated_files": [
+    {
+      "file": "src/tx/sources_1/bd/system/system.bd",
+      "independent_final_recipe_generation_matches_actual_config": true
+    },
+    {
+      "file": "src/tx/sources_1/bd/system/ip/system_up_axi_0_0/system_up_axi_0_0.xci",
+      "independent_final_recipe_generation_matches_actual_config": true
+    },
+    {
+      "file": "src/rx/sources_1/ip/ILA_Rx_BlindRate_Summary/ILA_Rx_BlindRate_Summary.xci",
+      "independent_final_recipe_generation_matches_actual_config": true
+    },
+    {
+      "file": "src/rx/sources_1/bd/system/system.bd",
+      "independent_final_recipe_generation_matches_actual_config": true
+    },
+    {
+      "file": "src/rx/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci",
+      "independent_final_recipe_generation_matches_actual_config": true
+    },
+    {
+      "file": "src/rx/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xci",
+      "independent_final_recipe_generation_matches_actual_config": true
+    },
+    {
+      "file": "src/rx/sources_1/bd/system/ip/system_up_axi_0_0/system_up_axi_0_0.xci",
+      "independent_final_recipe_generation_matches_actual_config": true
+    },
+    {
+      "file": "src/rx/sources_1/bd/system/ip/system_usp_rf_data_converter_0_0/system_usp_rf_data_converter_0_0.xci",
+      "independent_final_recipe_generation_matches_actual_config": true
+    }
+  ],
+  "regeneration_details": [
+    {
+      "path": "src/tx/sources_1/bd/system/system.bd",
+      "changes": [
+        {
+          "key": "/design/components/clk_wiz_0/xci_path",
+          "from": "ip\\system_clk_wiz_0_0\\system_clk_wiz_0_0.xci",
+          "to": "ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xci"
+        },
+        {
+          "key": "/design/components/ps8_0_axi_periph/components/s00_couplers/components/auto_pc/xci_path",
+          "from": "ip\\system_auto_pc_0\\system_auto_pc_0.xci",
+          "to": "ip/system_auto_pc_0/system_auto_pc_0.xci"
+        },
+        {
+          "key": "/design/components/ps8_0_axi_periph/components/xbar/xci_path",
+          "from": "ip\\system_xbar_0\\system_xbar_0.xci",
+          "to": "ip/system_xbar_0/system_xbar_0.xci"
+        },
+        {
+          "key": "/design/components/ps8_0_axi_periph/xci_path",
+          "from": "ip\\system_ps8_0_axi_periph_0\\system_ps8_0_axi_periph_0.xci",
+          "to": "ip/system_ps8_0_axi_periph_0/system_ps8_0_axi_periph_0.xci"
+        },
+        {
+          "key": "/design/components/rst_ps8_0_99M/xci_path",
+          "from": "ip\\system_rst_ps8_0_99M_0\\system_rst_ps8_0_99M_0.xci",
+          "to": "ip/system_rst_ps8_0_99M_0/system_rst_ps8_0_99M_0.xci"
+        },
+        {
+          "key": "/design/components/rst_rf_clk/xci_path",
+          "from": "ip\\system_proc_sys_reset_0_0\\system_proc_sys_reset_0_0.xci",
+          "to": "ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.xci"
+        },
+        {
+          "key": "/design/components/rst_rf_clk1/xci_path",
+          "from": "ip\\system_rst_rf_clk_0\\system_rst_rf_clk_0.xci",
+          "to": "ip/system_rst_rf_clk_0/system_rst_rf_clk_0.xci"
+        },
+        {
+          "key": "/design/components/up_axi_0/xci_path",
+          "from": "ip\\system_up_axi_0_0\\system_up_axi_0_0.xci",
+          "to": "ip/system_up_axi_0_0/system_up_axi_0_0.xci"
+        },
+        {
+          "key": "/design/components/usp_rf_data_converter_0/xci_path",
+          "from": "ip\\system_usp_rf_data_converter_0_0\\system_usp_rf_data_converter_0_0.xci",
+          "to": "ip/system_usp_rf_data_converter_0_0/system_usp_rf_data_converter_0_0.xci"
+        },
+        {
+          "key": "/design/components/zynq_ultra_ps_e_0/xci_path",
+          "from": "ip\\system_zynq_ultra_ps_e_0_0\\system_zynq_ultra_ps_e_0_0.xci",
+          "to": "ip/system_zynq_ultra_ps_e_0_0/system_zynq_ultra_ps_e_0_0.xci"
+        }
+      ]
+    },
+    {
+      "path": "src/tx/sources_1/bd/system/ip/system_up_axi_0_0/system_up_axi_0_0.xci",
+      "changes": []
+    },
+    {
+      "path": "src/rx/sources_1/ip/ILA_Rx_BlindRate_Summary/ILA_Rx_BlindRate_Summary.xci",
+      "changes": [
+        {
+          "key": "MODELPARAM_VALUE.C_TIME_TAG_WIDTH",
+          "from": "32",
+          "to": "1"
+        }
+      ]
+    },
+    {
+      "path": "src/rx/sources_1/bd/system/system.bd",
+      "changes": [
+        {
+          "key": "/design/components/clk_wiz_0/xci_path",
+          "from": "ip\\system_clk_wiz_0_0\\system_clk_wiz_0_0.xci",
+          "to": "ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xci"
+        },
+        {
+          "key": "/design/components/ps8_0_axi_periph/components/s00_couplers/components/auto_pc/xci_path",
+          "from": "ip\\system_auto_pc_0\\system_auto_pc_0.xci",
+          "to": "ip/system_auto_pc_0/system_auto_pc_0.xci"
+        },
+        {
+          "key": "/design/components/ps8_0_axi_periph/components/xbar/xci_path",
+          "from": "ip\\system_xbar_0\\system_xbar_0.xci",
+          "to": "ip/system_xbar_0/system_xbar_0.xci"
+        },
+        {
+          "key": "/design/components/ps8_0_axi_periph/xci_path",
+          "from": "ip\\system_ps8_0_axi_periph_0\\system_ps8_0_axi_periph_0.xci",
+          "to": "ip/system_ps8_0_axi_periph_0/system_ps8_0_axi_periph_0.xci"
+        },
+        {
+          "key": "/design/components/rst_ps8_0_99M/xci_path",
+          "from": "ip\\system_rst_ps8_0_99M_0\\system_rst_ps8_0_99M_0.xci",
+          "to": "ip/system_rst_ps8_0_99M_0/system_rst_ps8_0_99M_0.xci"
+        },
+        {
+          "key": "/design/components/rst_rf_clk/xci_path",
+          "from": "ip\\system_proc_sys_reset_0_0\\system_proc_sys_reset_0_0.xci",
+          "to": "ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.xci"
+        },
+        {
+          "key": "/design/components/rst_rf_clk1/xci_path",
+          "from": "ip\\system_rst_rf_clk_0\\system_rst_rf_clk_0.xci",
+          "to": "ip/system_rst_rf_clk_0/system_rst_rf_clk_0.xci"
+        },
+        {
+          "key": "/design/components/up_axi_0/xci_path",
+          "from": "ip\\system_up_axi_0_0\\system_up_axi_0_0.xci",
+          "to": "ip/system_up_axi_0_0/system_up_axi_0_0.xci"
+        },
+        {
+          "key": "/design/components/usp_rf_data_converter_0/xci_path",
+          "from": "ip\\system_usp_rf_data_converter_0_0\\system_usp_rf_data_converter_0_0.xci",
+          "to": "ip/system_usp_rf_data_converter_0_0/system_usp_rf_data_converter_0_0.xci"
+        },
+        {
+          "key": "/design/components/zynq_ultra_ps_e_0/xci_path",
+          "from": "ip\\system_zynq_ultra_ps_e_0_0\\system_zynq_ultra_ps_e_0_0.xci",
+          "to": "ip/system_zynq_ultra_ps_e_0_0/system_zynq_ultra_ps_e_0_0.xci"
+        }
+      ]
+    },
+    {
+      "path": "src/rx/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci",
+      "changes": []
+    },
+    {
+      "path": "src/rx/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xci",
+      "changes": [
+        {
+          "key": "BUSIFPARAM_VALUE.CLOCK_CLK_IN1.CLK_DOMAIN",
+          "from": "",
+          "to": "system_usp_rf_data_converter_0_0_clk_adc0"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S_AXI_ACLK.CLK_DOMAIN",
+          "from": "",
+          "to": "system_zynq_ultra_ps_e_0_0_pl_clk0"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S_AXI_ACLK.FREQ_HZ",
+          "from": "100000000",
+          "to": "99999001"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S_AXI_LITE.CLK_DOMAIN",
+          "from": "",
+          "to": "system_zynq_ultra_ps_e_0_0_pl_clk0"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S_AXI_LITE.FREQ_HZ",
+          "from": "100000000",
+          "to": "99999001"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S_AXI_LITE.NUM_READ_OUTSTANDING",
+          "from": "1",
+          "to": "2"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S_AXI_LITE.NUM_WRITE_OUTSTANDING",
+          "from": "1",
+          "to": "2"
+        }
+      ]
+    },
+    {
+      "path": "src/rx/sources_1/bd/system/ip/system_up_axi_0_0/system_up_axi_0_0.xci",
+      "changes": []
+    },
+    {
+      "path": "src/rx/sources_1/bd/system/ip/system_usp_rf_data_converter_0_0/system_usp_rf_data_converter_0_0.xci",
+      "changes": [
+        {
+          "key": "BUSIFPARAM_VALUE.ADC1_CLK.FREQ_HZ",
+          "from": "100000000",
+          "to": "409600000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.DAC2_CLK.FREQ_HZ",
+          "from": "100000000",
+          "to": "409600000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M00_AXIS.CLK_DOMAIN",
+          "from": "",
+          "to": "system_clk_wiz_0_0_clk_out1"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M00_AXIS.FREQ_HZ",
+          "from": "100000000",
+          "to": "409600000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M02_AXIS.CLK_DOMAIN",
+          "from": "",
+          "to": "system_clk_wiz_0_0_clk_out1"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M02_AXIS.FREQ_HZ",
+          "from": "100000000",
+          "to": "409600000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M0_AXIS_ACLK.CLK_DOMAIN",
+          "from": "",
+          "to": "system_clk_wiz_0_0_clk_out1"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M0_AXIS_ACLK.FREQ_HZ",
+          "from": "100000000",
+          "to": "409600000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M10_AXIS.CLK_DOMAIN",
+          "from": "",
+          "to": "system_clk_wiz_0_0_clk_out1"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M10_AXIS.FREQ_HZ",
+          "from": "100000000",
+          "to": "40960000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M11_AXIS.CLK_DOMAIN",
+          "from": "",
+          "to": "system_clk_wiz_0_0_clk_out1"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M11_AXIS.FREQ_HZ",
+          "from": "100000000",
+          "to": "40960000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M12_AXIS.CLK_DOMAIN",
+          "from": "",
+          "to": "system_clk_wiz_0_0_clk_out1"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M12_AXIS.FREQ_HZ",
+          "from": "100000000",
+          "to": "40960000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M13_AXIS.CLK_DOMAIN",
+          "from": "",
+          "to": "system_clk_wiz_0_0_clk_out1"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M13_AXIS.FREQ_HZ",
+          "from": "100000000",
+          "to": "40960000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M1_AXIS_ACLK.CLK_DOMAIN",
+          "from": "",
+          "to": "system_clk_wiz_0_0_clk_out1"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.M1_AXIS_ACLK.FREQ_HZ",
+          "from": "100000000",
+          "to": "40960000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S20_AXIS.CLK_DOMAIN",
+          "from": "",
+          "to": "system_clk_wiz_0_0_clk_out1"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S20_AXIS.FREQ_HZ",
+          "from": "100000000",
+          "to": "409600000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S22_AXIS.CLK_DOMAIN",
+          "from": "",
+          "to": "system_clk_wiz_0_0_clk_out1"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S22_AXIS.FREQ_HZ",
+          "from": "100000000",
+          "to": "409600000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S2_AXIS_ACLK.CLK_DOMAIN",
+          "from": "",
+          "to": "system_clk_wiz_0_0_clk_out1"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S2_AXIS_ACLK.FREQ_HZ",
+          "from": "100000000",
+          "to": "409600000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S30_AXIS.CLK_DOMAIN",
+          "from": "",
+          "to": "system_clk_wiz_0_0_clk_out1"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S30_AXIS.FREQ_HZ",
+          "from": "100000000",
+          "to": "40960000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S32_AXIS.CLK_DOMAIN",
+          "from": "",
+          "to": "system_clk_wiz_0_0_clk_out1"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S32_AXIS.FREQ_HZ",
+          "from": "100000000",
+          "to": "40960000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S3_AXIS_ACLK.CLK_DOMAIN",
+          "from": "",
+          "to": "system_clk_wiz_0_0_clk_out1"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S3_AXIS_ACLK.FREQ_HZ",
+          "from": "100000000",
+          "to": "40960000"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S_AXI.CLK_DOMAIN",
+          "from": "",
+          "to": "system_zynq_ultra_ps_e_0_0_pl_clk0"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S_AXI.FREQ_HZ",
+          "from": "100000000",
+          "to": "99999001"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S_AXI.NUM_READ_OUTSTANDING",
+          "from": "1",
+          "to": "2"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S_AXI.NUM_WRITE_OUTSTANDING",
+          "from": "1",
+          "to": "2"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S_AXI_ACLK.CLK_DOMAIN",
+          "from": "",
+          "to": "system_zynq_ultra_ps_e_0_0_pl_clk0"
+        },
+        {
+          "key": "BUSIFPARAM_VALUE.S_AXI_ACLK.FREQ_HZ",
+          "from": "100000000",
+          "to": "99999001"
+        }
+      ]
+    }
+  ],
+  "regeneration_interpretation": {
+    "bd": "Only Windows-to-POSIX xci_path separators changed.",
+    "xci": "Vivado propagated bus clock/domain/outstanding metadata and refreshed generated descriptions/permissions. User PARAM_VALUE settings stayed unchanged.",
+    "ila": "Timestamp is disabled (PARAM_VALUE.C_EN_TIME_TAG=0). Generated MODEL C_TIME_TAG_WIDTH became1; user setting32 is unchanged.",
+    "independent_check": "All regenerated configuration values match a separate create-stage run from the final public recipe."
+  },
+  "expanded_simulation_copies_checked": 18,
+  "simulation_scope": "Hash comparison covers expanded cached copies; actual compiled models are the7 Rx cores, Tx RRC, Tx encoder and Rx decoder as listed by sim/run.py.",
+  "delivery_refresh": {
+    "protected_build_inputs_unchanged": true,
+    "build_snapshot_unchanged_files": 310,
+    "non_executable_changes": [
+      {
+        "path": "software/board/README.md",
+        "build_snapshot_sha256": "450109630854ae11a84cb0dee2f0cd18e4dc14952cc36d402bc0cc5b4b634048",
+        "current_sha256": "e483a6c97531c69b15733df0948744536dc497b19de8718b1cb3c3feee3a30ea",
+        "classification": "usage documentation; not a compiler input"
+      }
+    ],
+    "hardware_handoff": "software/board/hardware",
+    "software_fresh_creation_check": "results/software/handoff.json"
+  }
+}

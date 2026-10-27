@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "repository": "sherlwang/AdaptiveX",
+  "project_directory_candidates": [
+    "AdaptiveX_Prj",
+    "Prj",
+    "prj"
+  ],
+  "include_directories": [
+    "skill",
+    "vitis_workspace"
+  ],
+  "required_directories": [
+    "skill",
+    "vitis_workspace"
+  ],
+  "include_root_files": [
+    "README.md",
+    "LICENSE",
+    ".gitignore",
+    ".gitattributes"
+  ],
+  "include_root_patterns": [
+    "*.rar",
+    "*.docx",
+    "*.pdf",
+    "*.png",
+    "*.jpg",
+    "*.jpeg",
+    "*.svg",
+    "*.bmp",
+    "*.webp",
+    "*.tif",
+    "*.tiff"
+  ],
+  "exclude_root_patterns": [
+    "2zyj.txt",
+    "*authorization*",
+    "*authorisation*",
+    "*commitment*",
+    "*poster*",
+    "*video*",
+    "*demo*",
+    "*授权*",
+    "*承诺*",
+    "*海报*",
+    "*演示*",
+    "*.mp4",
+    "*.mov",
+    "*.avi",
+    "*.mkv",
+    "*.webm"
+  ],
+  "excluded_directory_names": [
+    ".git"
+  ],
+  "git_excluded_project_directories": [
+    "Tx",
+    "Rx"
+  ],
+  "git_excluded_directory_names": [
+    "__pycache__",
+    ".Xil"
+  ],
+  "asset_raw_limit_bytes": 1879048192,
+  "git_max_file_bytes": 104857600,
+  "exclude_names": [
+    "2zyj.txt"
+  ]
+}

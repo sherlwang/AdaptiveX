@@ -1,0 +1,29 @@
+{
+  "side": "rx",
+  "name": "rx_ai_switch",
+  "generic": {},
+  "edf_bytes": 39581489,
+  "sim_bytes": 16884416,
+  "files": {
+    "core.edf": {
+      "path": "core.edf.gz",
+      "sha256": "df8ec99424dc17f39ed0f81f5cc7795be88d9bac205a995da6cc4561422cb541",
+      "raw_sha256": "1304d7cfc80a5df5839a7292b71351c9e019675054cb352947b59bd14d8b694f",
+      "raw_bytes": 39581489
+    },
+    "core_sim.v": {
+      "path": "core_sim.v.gz",
+      "sha256": "ea7aefa48288e6f6c02d27507096695a4b5cf3c711dcefdb9cffbba987c5a81d",
+      "raw_sha256": "b33350f7ed7d8cdc023abf2f34289fa737739f6f951a100671ed419ce1d08aaf",
+      "raw_bytes": 16884416
+    },
+    "core_stub.v": {
+      "path": "core_stub.v",
+      "sha256": "d614e6727be23c86292711ea6944d58a2e3f38e4aac5880d476983b09e4baaa8",
+      "raw_sha256": "d614e6727be23c86292711ea6944d58a2e3f38e4aac5880d476983b09e4baaa8",
+      "raw_bytes": 4057
+    }
+  },
+  "part": "xczu47dr-ffve1156-2-i",
+  "tool_version": "Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021"
+}

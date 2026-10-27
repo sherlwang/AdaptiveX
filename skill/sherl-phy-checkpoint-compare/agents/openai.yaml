@@ -1,0 +1,4 @@
+interface:
+  display_name: "MATLAB与HDL检查点核对"
+  short_description: "核对同输入MATLAB与真实HDL检查点，保留位序、缺帧和直接MER差异。"
+  default_prompt: "使用 $sherl-phy-checkpoint-compare 读取真实HDL检查点，与同一输入的MATLAB参考逐帧核对bit和MER。"

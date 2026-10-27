@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/analogdevicesinc/hdl",
+  "commit": "c9a501d87a420d2e28aa9d931557bdb4122f3c4f",
+  "upstream_commit_time": "2026-10-20T10:34:44Z",
+  "files": {
+    "LICENSE_GPL2": {
+      "upstream_url": "https://raw.githubusercontent.com/analogdevicesinc/hdl/c9a501d87a420d2e28aa9d931557bdb4122f3c4f/LICENSE_GPL2",
+      "sha256": "d982acba4653bb8267df569bb9f403a2f4ccf6a11d60f74aa4235229238e82cf",
+      "bytes": 17697
+    },
+    "LICENSE_ADIBSD": {
+      "upstream_url": "https://raw.githubusercontent.com/analogdevicesinc/hdl/c9a501d87a420d2e28aa9d931557bdb4122f3c4f/LICENSE_ADIBSD",
+      "sha256": "c090bb95dddea392c9aec4422df46f2b2d8511067058272700b169ecf3b0d40b",
+      "bytes": 1949
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "raw_simulator_log_sha256": "e3467ffdda34f7e7516a05de32f92be04c2cd668923773ce177b77ffeb397d94",
+  "log_treatment": "Host and temporary output paths normalized only; numerical/functional output unchanged."
+}

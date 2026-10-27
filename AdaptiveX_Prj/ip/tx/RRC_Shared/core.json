@@ -1,0 +1,29 @@
+{
+  "side": "tx",
+  "name": "RRC_Shared",
+  "generic": {},
+  "edf_bytes": 63868920,
+  "sim_bytes": 23066286,
+  "files": {
+    "core.edf": {
+      "path": "core.edf.gz",
+      "sha256": "eb6b2c834f61e7ff1b44d66c4d3c00607fce7ed5637bdeeb87c0f5898f15d0e0",
+      "raw_sha256": "053fed86ca27c3239f12361296fb6abb7c9e866fad384a383aece58ef0170b50",
+      "raw_bytes": 63868920
+    },
+    "core_sim.v": {
+      "path": "core_sim.v.gz",
+      "sha256": "e7cea90a15a6ae4a5a5be1d4e534a36e92bfaf79efcdf5574a3f92ab6046c496",
+      "raw_sha256": "403609d4d4ff3c32c99d28f070dcd1000ccc7c29c7584e9ca84322a50ba986c9",
+      "raw_bytes": 23066286
+    },
+    "core_stub.v": {
+      "path": "core_stub.v",
+      "sha256": "080caabbff6bf13fd3e99ca1d4e1a391829bbda5aa605ac3747239bbb29c8af1",
+      "raw_sha256": "080caabbff6bf13fd3e99ca1d4e1a391829bbda5aa605ac3747239bbb29c8af1",
+      "raw_bytes": 1146
+    }
+  },
+  "part": "xczu47dr-ffve1156-2-i",
+  "tool_version": "Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021"
+}

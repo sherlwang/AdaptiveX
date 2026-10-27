@@ -1,0 +1,30 @@
+
+	Sponsored License -- for use in support of a program or activity sponsored by MathWorks.
+	Not for government, commercial or other non-sponsored organizational use.
+
+    Frame    FDE_MER_dB    NLMS_MER_dB    HDL_vs_floatFDE_dB
+    _____    __________    ___________    __________________
+
+      0        28.556        30.906               85.1      
+      1        30.461        30.698             84.971      
+      2        29.693        30.965             85.067      
+      3        28.793        30.807             85.247      
+      4        29.334        30.862             84.962      
+      5        28.737        30.861             84.951      
+      6        28.856        30.878             85.425      
+      7        30.393        30.944              85.23      
+      8        30.643            31             85.186      
+      9        30.664        30.962             85.146      
+     10        29.246        30.686             84.878      
+     11         29.71        30.792              85.23      
+     12        29.251        30.996             85.109      
+     13        28.804        30.884              84.96      
+     14        30.586        31.038             85.023      
+     15        29.691        30.899             84.966      
+
+Coded BER: 0 / 48960 = 0
+Decoded BER: 0 / 36864 = 0
+FDE MER mean/min/max: 29.588612854 / 28.556484339 / 30.663709160 dB
+NLMS MER mean/min/max: 30.886128424 / 30.685639218 / 31.038260630 dB
+HDL vs float FDE mean/min/max: 85.090693957 / 84.877616777 / 85.425461244 dB
+FULL_PUBLIC_MATLAB_VERIFICATION_COMPLETE

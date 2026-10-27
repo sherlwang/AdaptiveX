@@ -1,0 +1,14 @@
+{
+  "case": "codec",
+  "status": "PASS",
+  "implementation": "delivered structural functional netlists",
+  "details": {
+    "status": "PASS",
+    "modes": 9,
+    "blocks": 54,
+    "encoded_words": 13770,
+    "decoded_words": 10368,
+    "bit_errors": 0
+  },
+  "elapsed_seconds": 1214.37
+}

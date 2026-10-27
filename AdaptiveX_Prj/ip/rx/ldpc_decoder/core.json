@@ -1,0 +1,32 @@
+{
+  "side": "rx",
+  "name": "ldpc_decoder",
+  "generic": {
+    "DYNAMIC_WIDTH": 1,
+    "FORCE_MAX_ITER": 0
+  },
+  "edf_bytes": 127106309,
+  "sim_bytes": 58526716,
+  "files": {
+    "core.edf": {
+      "path": "core.edf.gz",
+      "sha256": "212015da0ccaeda545c5cd26320a9146fbe65f9e01b7cd3746a432616b279a6a",
+      "raw_sha256": "a68fc7d3a485a2f4a94b4f14572ba1a01a0c2645e0719507ef4b3f698935f4e6",
+      "raw_bytes": 127106309
+    },
+    "core_sim.v": {
+      "path": "core_sim.v.gz",
+      "sha256": "7739df96947c247b82c77fb084d4583a6eb16a93facb91e7bfce775397d7c5c6",
+      "raw_sha256": "81ae3f44152e3b576f0ee80161c6c188e559c371243e600761d900bf2cd7d46b",
+      "raw_bytes": 58526716
+    },
+    "core_stub.v": {
+      "path": "core_stub.v",
+      "sha256": "7ee4ba34dea34ba8c06f48391e633df5e542b69aa7dd499f5c943cadff15664d",
+      "raw_sha256": "7ee4ba34dea34ba8c06f48391e633df5e542b69aa7dd499f5c943cadff15664d",
+      "raw_bytes": 1539
+    }
+  },
+  "part": "xczu47dr-ffve1156-2-i",
+  "tool_version": "Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021"
+}

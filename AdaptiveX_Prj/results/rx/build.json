@@ -1,0 +1,601 @@
+{
+  "side": "rx",
+  "tool_version": "Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021",
+  "device": "xczu47dr-ffve1156-2-i",
+  "board_execution": "not_performed",
+  "top_resource_utilization": {
+    "CLB LUTs": {
+      "used": 304298.0,
+      "fixed": 0.0,
+      "prohibited": 0.0,
+      "available": 425280.0,
+      "util_percent": 71.55
+    },
+    "CLB Registers": {
+      "used": 245015.0,
+      "fixed": 0.0,
+      "prohibited": 0.0,
+      "available": 850560.0,
+      "util_percent": 28.81
+    },
+    "Block RAM Tile": {
+      "used": 690.5,
+      "fixed": 0.0,
+      "prohibited": 0.0,
+      "available": 1080.0,
+      "util_percent": 63.94
+    },
+    "DSPs": {
+      "used": 2478.0,
+      "fixed": 0.0,
+      "prohibited": 0.0,
+      "available": 4272.0,
+      "util_percent": 58.01
+    },
+    "URAM": {
+      "used": 0.0,
+      "fixed": 0.0,
+      "prohibited": 0.0,
+      "available": 80.0,
+      "util_percent": 0.0
+    },
+    "Bonded IOB": {
+      "used": 17.0,
+      "fixed": 17.0,
+      "prohibited": 0.0,
+      "available": 152.0,
+      "util_percent": 11.18
+    }
+  },
+  "timing": {
+    "WNS_ns": 0.048,
+    "TNS_ns": 0.0,
+    "setup_failing_endpoints": 0,
+    "setup_total_endpoints": 917454,
+    "WHS_ns": 0.009,
+    "THS_ns": 0.0,
+    "hold_failing_endpoints": 0,
+    "hold_total_endpoints": 917310,
+    "WPWS_ns": 0.455,
+    "TPWS_ns": 0.0,
+    "pulse_width_failing_endpoints": 0,
+    "pulse_width_total_endpoints": 282235,
+    "official_report_statement": "All user specified timing constraints are met.",
+    "all_reported_setup_hold_pulse_checks_met": true,
+    "check_timing_counts": {
+      "no_clock": 2,
+      "constant_clock": 0,
+      "pulse_width_clock": 0,
+      "unconstrained_internal_endpoints": 2,
+      "no_input_delay": 1,
+      "no_output_delay": 4,
+      "multiple_clock": 0,
+      "generated_clocks": 0,
+      "loops": 0,
+      "partial_input_delay": 0,
+      "partial_output_delay": 0,
+      "latch_loops": 0
+    },
+    "clock_summary": [
+      {
+        "name": "RFADC0_CLK",
+        "waveform_ns": [
+          0.0,
+          1.628
+        ],
+        "period_ns": 3.255,
+        "frequency_MHz": 307.22
+      },
+      {
+        "name": "clk_out1_system_clk_wiz_0_0",
+        "waveform_ns": [
+          0.0,
+          1.221
+        ],
+        "period_ns": 2.441,
+        "frequency_MHz": 409.626
+      },
+      {
+        "name": "clk_out2_system_clk_wiz_0_0",
+        "waveform_ns": [
+          0.0,
+          2.441
+        ],
+        "period_ns": 4.883,
+        "frequency_MHz": 204.813
+      },
+      {
+        "name": "clk_out1_clk_ldpc_wiz",
+        "waveform_ns": [
+          0.0,
+          1.628
+        ],
+        "period_ns": 3.255,
+        "frequency_MHz": 307.22
+      },
+      {
+        "name": "clk_out3_system_clk_wiz_0_0",
+        "waveform_ns": [
+          0.0,
+          12.206
+        ],
+        "period_ns": 24.413,
+        "frequency_MHz": 40.963
+      },
+      {
+        "name": "RFADC1_CLK",
+        "waveform_ns": [
+          0.0,
+          1.628
+        ],
+        "period_ns": 3.255,
+        "frequency_MHz": 307.22
+      },
+      {
+        "name": "RFADC2_CLK",
+        "waveform_ns": [
+          0.0,
+          5.0
+        ],
+        "period_ns": 10.0,
+        "frequency_MHz": 100.0
+      },
+      {
+        "name": "RFADC3_CLK",
+        "waveform_ns": [
+          0.0,
+          5.0
+        ],
+        "period_ns": 10.0,
+        "frequency_MHz": 100.0
+      },
+      {
+        "name": "RFDAC0_CLK",
+        "waveform_ns": [
+          0.0,
+          5.0
+        ],
+        "period_ns": 10.0,
+        "frequency_MHz": 100.0
+      },
+      {
+        "name": "RFDAC1_CLK",
+        "waveform_ns": [
+          0.0,
+          5.0
+        ],
+        "period_ns": 10.0,
+        "frequency_MHz": 100.0
+      },
+      {
+        "name": "RFDAC2_CLK",
+        "waveform_ns": [
+          0.0,
+          1.628
+        ],
+        "period_ns": 3.255,
+        "frequency_MHz": 307.22
+      },
+      {
+        "name": "RFDAC3_CLK",
+        "waveform_ns": [
+          0.0,
+          13.021
+        ],
+        "period_ns": 26.042,
+        "frequency_MHz": 38.4
+      },
+      {
+        "name": "clk_pl_0",
+        "waveform_ns": [
+          0.0,
+          5.0
+        ],
+        "period_ns": 10.0,
+        "frequency_MHz": 100.0
+      },
+      {
+        "name": "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK",
+        "waveform_ns": [
+          0.0,
+          25.0
+        ],
+        "period_ns": 50.0,
+        "frequency_MHz": 20.0
+      },
+      {
+        "name": "gt_refclk_p",
+        "waveform_ns": [
+          0.0,
+          3.2
+        ],
+        "period_ns": 6.4,
+        "frequency_MHz": 156.25
+      },
+      {
+        "name": "qpll0clk_in[0]",
+        "waveform_ns": [
+          0.0,
+          0.097
+        ],
+        "period_ns": 0.194,
+        "frequency_MHz": 5156.25
+      },
+      {
+        "name": "rxoutclk_out[0]",
+        "waveform_ns": [
+          0.0,
+          3.2
+        ],
+        "period_ns": 6.4,
+        "frequency_MHz": 156.25
+      },
+      {
+        "name": "rxoutclk_out[0]_1",
+        "waveform_ns": [
+          0.0,
+          3.2
+        ],
+        "period_ns": 6.4,
+        "frequency_MHz": 156.25
+      },
+      {
+        "name": "txoutclk_out[0]",
+        "waveform_ns": [
+          0.0,
+          3.2
+        ],
+        "period_ns": 6.4,
+        "frequency_MHz": 156.25
+      },
+      {
+        "name": "txoutclk_out[0]_1",
+        "waveform_ns": [
+          0.0,
+          3.2
+        ],
+        "period_ns": 6.4,
+        "frequency_MHz": 156.25
+      },
+      {
+        "name": "txoutclkpcs_out[0]",
+        "waveform_ns": [
+          0.0,
+          3.103
+        ],
+        "period_ns": 6.206,
+        "frequency_MHz": 161.133
+      },
+      {
+        "name": "txoutclkpcs_out[0]_1",
+        "waveform_ns": [
+          0.0,
+          3.103
+        ],
+        "period_ns": 6.206,
+        "frequency_MHz": 161.133
+      },
+      {
+        "name": "qpll0refclk_in[0]",
+        "waveform_ns": [
+          0.0,
+          3.2
+        ],
+        "period_ns": 6.4,
+        "frequency_MHz": 156.25
+      }
+    ],
+    "boundary": "Timing statement applies to the user-specified constraints. Missing clocks/delays and unconstrained endpoints remain visible in check_timing_counts; board execution was not performed."
+  },
+  "drc": {
+    "reported_violations": 3659,
+    "severity_totals": {
+      "Error": 0,
+      "Critical Warning": 0,
+      "Warning": 3083,
+      "Advisory": 576
+    },
+    "rules": [
+      {
+        "rule": "DPIP-2",
+        "severity": "Warning",
+        "description": "Input pipelining",
+        "violations": 1460
+      },
+      {
+        "rule": "DPOP-3",
+        "severity": "Warning",
+        "description": "PREG Output pipelining",
+        "violations": 375
+      },
+      {
+        "rule": "DPOP-4",
+        "severity": "Warning",
+        "description": "MREG Output pipelining",
+        "violations": 1234
+      },
+      {
+        "rule": "PDCN-1569",
+        "severity": "Warning",
+        "description": "LUT equation term check",
+        "violations": 3
+      },
+      {
+        "rule": "REQP-1934",
+        "severity": "Warning",
+        "description": "RAMB18E2_nochange_collision_advisory",
+        "violations": 1
+      },
+      {
+        "rule": "REQP-1935",
+        "severity": "Warning",
+        "description": "RAMB36E2_nochange_collision_advisory",
+        "violations": 9
+      },
+      {
+        "rule": "RTSTAT-10",
+        "severity": "Warning",
+        "description": "No routable loads",
+        "violations": 1
+      },
+      {
+        "rule": "AVAL-155",
+        "severity": "Advisory",
+        "description": "enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND",
+        "violations": 144
+      },
+      {
+        "rule": "AVAL-156",
+        "severity": "Advisory",
+        "description": "enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND",
+        "violations": 144
+      },
+      {
+        "rule": "REQP-1669",
+        "severity": "Advisory",
+        "description": "enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND",
+        "violations": 72
+      },
+      {
+        "rule": "REQP-1673",
+        "severity": "Advisory",
+        "description": "enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND",
+        "violations": 72
+      },
+      {
+        "rule": "REQP-1678",
+        "severity": "Advisory",
+        "description": "enum_CREG_0_connects_CEC_GND",
+        "violations": 72
+      },
+      {
+        "rule": "REQP-1680",
+        "severity": "Advisory",
+        "description": "enum_PREG_0_connects_CEP_GND",
+        "violations": 72
+      }
+    ]
+  },
+  "bus_skew": {
+    "constraints_reported": 15,
+    "violating_constraints": 0,
+    "minimum_slack_ns": 1.708,
+    "worst_constraint": {
+      "id": 2,
+      "position": 182,
+      "corner": "Slow",
+      "requirement_ns": 2.441,
+      "actual_ns": 0.733,
+      "slack_ns": 1.708
+    },
+    "detailed_MET_count": 15,
+    "detailed_VIOLATED_count": 0,
+    "constraint_summary": [
+      {
+        "id": 1,
+        "position": 180,
+        "corner": "Slow",
+        "requirement_ns": 2.441,
+        "actual_ns": 0.61,
+        "slack_ns": 1.831
+      },
+      {
+        "id": 2,
+        "position": 182,
+        "corner": "Slow",
+        "requirement_ns": 2.441,
+        "actual_ns": 0.733,
+        "slack_ns": 1.708
+      },
+      {
+        "id": 3,
+        "position": 185,
+        "corner": "Slow",
+        "requirement_ns": 4.882,
+        "actual_ns": 0.689,
+        "slack_ns": 4.193
+      },
+      {
+        "id": 4,
+        "position": 187,
+        "corner": "Slow",
+        "requirement_ns": 4.882,
+        "actual_ns": 0.575,
+        "slack_ns": 4.307
+      },
+      {
+        "id": 5,
+        "position": 225,
+        "corner": "Slow",
+        "requirement_ns": 4.883,
+        "actual_ns": 1.113,
+        "slack_ns": 3.77
+      },
+      {
+        "id": 6,
+        "position": 227,
+        "corner": "Slow",
+        "requirement_ns": 4.883,
+        "actual_ns": 1.006,
+        "slack_ns": 3.877
+      },
+      {
+        "id": 7,
+        "position": 229,
+        "corner": "Slow",
+        "requirement_ns": 10.0,
+        "actual_ns": 1.039,
+        "slack_ns": 8.961
+      },
+      {
+        "id": 8,
+        "position": 231,
+        "corner": "Slow",
+        "requirement_ns": 4.883,
+        "actual_ns": 2.047,
+        "slack_ns": 2.836
+      },
+      {
+        "id": 9,
+        "position": 233,
+        "corner": "Slow",
+        "requirement_ns": 4.883,
+        "actual_ns": 1.141,
+        "slack_ns": 3.742
+      },
+      {
+        "id": 10,
+        "position": 235,
+        "corner": "Slow",
+        "requirement_ns": 4.883,
+        "actual_ns": 0.874,
+        "slack_ns": 4.009
+      },
+      {
+        "id": 11,
+        "position": 241,
+        "corner": "Slow",
+        "requirement_ns": 19.2,
+        "actual_ns": 1.21,
+        "slack_ns": 17.99
+      },
+      {
+        "id": 12,
+        "position": 437,
+        "corner": "Slow",
+        "requirement_ns": 4.883,
+        "actual_ns": 0.602,
+        "slack_ns": 4.281
+      },
+      {
+        "id": 13,
+        "position": 439,
+        "corner": "Slow",
+        "requirement_ns": 4.883,
+        "actual_ns": 0.732,
+        "slack_ns": 4.151
+      },
+      {
+        "id": 14,
+        "position": 442,
+        "corner": "Slow",
+        "requirement_ns": 4.883,
+        "actual_ns": 0.505,
+        "slack_ns": 4.378
+      },
+      {
+        "id": 15,
+        "position": 444,
+        "corner": "Slow",
+        "requirement_ns": 4.883,
+        "actual_ns": 0.547,
+        "slack_ns": 4.336
+      }
+    ]
+  },
+  "bitstream": {
+    "path": "validation/rx_bit/project/rx.runs/impl_1/adaloop_top.bit",
+    "bytes": 34437473,
+    "sha256": "19a62288a09be12524643b31bd17c2966b17051ca674e7c0144d4c158b57e0b4"
+  },
+  "debug_probes": {
+    "path": "validation/rx_bit/project/rx.ltx",
+    "bytes": 108645,
+    "sha256": "d52769608d5f592f92f320519f6c85fb091a9f40bb27242cbd4da7241280cca1"
+  },
+  "hardware_handoff_no_bit": {
+    "path": "validation/rx_bit/project/rx_hardware.xsa",
+    "bytes": 741163,
+    "sha256": "5bf4646deacf32b05075c8d8daeb171c08b4d0c4ac9c16a23da86861e7d24a0b"
+  },
+  "hardware_handoff_with_bit": {
+    "path": "validation/rx_bit/project/rx_with_bit.xsa",
+    "bytes": 12058912,
+    "sha256": "1b2cbdf8e6bc1325765621a47aaf3e42a1ff16b20424ad90adbceceff98feb83"
+  },
+  "bitstream_creation_succeeded": true,
+  "xsa_embedded_bitstream": {
+    "member": "rx_with_bit.bit",
+    "sha256": "19a62288a09be12524643b31bd17c2966b17051ca674e7c0144d4c158b57e0b4"
+  },
+  "xsa_embedded_bitstream_equals_bit_artifact": true,
+  "status": "BIT_GENERATED",
+  "build_lineage": "New project from the public source/configuration inputs; all delivered EDIF cores bound into the complete synthesis checkpoint; implementation continued from that checkpoint. No private DCP input.",
+  "binary_artifacts_in_repository": false,
+  "reports": {
+    "synthesized_utilization.rpt": {
+      "path": "results/rx/synthesized_utilization.rpt",
+      "raw_tool_output_sha256": "1c5666129c885606b714cb497672461a5fcb2c5d541d37685374e871333b998a",
+      "published_sha256": "8a6342a908ada552c8b99be9d70c933c4f4b1a04a295d8b0976d8e92de1bdca0",
+      "normalization": "Output paths and host only; numerical contents unchanged."
+    },
+    "synthesized_hierarchy.rpt": {
+      "path": "results/rx/synthesized_hierarchy.rpt",
+      "raw_tool_output_sha256": "4aea5ef3ab0276bb216087d9379d87e0d8eb4643d907284524aa52537312c5bc",
+      "published_sha256": "d82d6c2a6a0b58dfc12f0ac8b3e391a9fb3f8ef3b777232ea016c0c3b95a596b",
+      "normalization": "Output paths and host only; numerical contents unchanged."
+    },
+    "synthesized_timing.rpt": {
+      "path": "results/rx/synthesized_timing.rpt",
+      "raw_tool_output_sha256": "92f0d26b0d98bec0536914136df114df2606e58ab5c1e7c518e64938a7e0006a",
+      "published_sha256": "ee011b2a56d56aa64f4f98f91ae678c67b261311faaae1c10a3dddc0aae0c3ef",
+      "normalization": "Output paths and host only; numerical contents unchanged."
+    },
+    "routed_utilization.rpt": {
+      "path": "results/rx/routed_utilization.rpt",
+      "raw_tool_output_sha256": "a3674ceb789e5e5d83570db21beada23bb7c63173008c8aebe3c8430e268bced",
+      "published_sha256": "e0e85bd255d281c998cb37f7181d5ed4d6c5b464760d65812281ca9cc6face3d",
+      "normalization": "Output paths and host only; numerical contents unchanged."
+    },
+    "routed_hierarchy.rpt": {
+      "path": "results/rx/routed_hierarchy.rpt",
+      "raw_tool_output_sha256": "2c271cb7ae28f196aa6be827a1e7d798c184726ead9f959f0a9463597d2f2c13",
+      "published_sha256": "37f3bc0332d2d7dc146fe61734f9a15bac27864706b328ab8c65c685c800372e",
+      "normalization": "Output paths and host only; numerical contents unchanged."
+    },
+    "routed_timing.rpt": {
+      "path": "results/rx/routed_timing.rpt",
+      "raw_tool_output_sha256": "e761099159d609dafda49ecd796745fd4633cd324c018c2b471e4f492bd3c554",
+      "published_sha256": "4345daa7711fafbd75acb50e2f0824baeb60548f3d685d03a4d5a604fc70ee3f",
+      "normalization": "Output paths and host only; numerical contents unchanged."
+    },
+    "routed_drc.rpt": {
+      "path": "results/rx/routed_drc.rpt",
+      "raw_tool_output_sha256": "1b917ffb92cfba9de2b54146888545da1ead0f70680d0707e8f46b67933b8f3e",
+      "published_sha256": "67e0fce1e4bbdce6f15a0d77755e32fe760ef00e06e7c809d744b2b20c92748e",
+      "normalization": "Output paths and host only; numerical contents unchanged."
+    },
+    "routed_clock_interaction.rpt": {
+      "path": "results/rx/routed_clock_interaction.rpt",
+      "raw_tool_output_sha256": "0b2214fc4c28e5707e54439fdc7b7639bc06e9fba93468f00ef0b65670d152f3",
+      "published_sha256": "7d656aa85efeb8092be9ff1685c750cdc04c4244ee0dfc490038758e3eaece9b",
+      "normalization": "Output paths and host only; numerical contents unchanged."
+    },
+    "routed_bus_skew.rpt": {
+      "path": "results/rx/routed_bus_skew.rpt",
+      "raw_tool_output_sha256": "b9bec02ce809bf937f6f0162bf8d9045dc5e377f7c262d64a819873f94cd3d60",
+      "published_sha256": "2aee6e85d60d3b6e3991d2284f9329f17a5f6093a8df3a6eba88a2dc1ae90487",
+      "normalization": "Output paths and host only; numerical contents unchanged."
+    }
+  }
+}

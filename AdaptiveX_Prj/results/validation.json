@@ -1,0 +1,1456 @@
+{
+  "variant": "fixed_sampling_phase_0",
+  "device": "xczu47dr-ffve1156-2-i",
+  "vivado": "2021.2",
+  "matlab": "R2026b",
+  "source_input_manifest": "results/build_inputs.json",
+  "source_input_manifest_sha256": "a4aa6c8bc7e2c47b2cc02a2ac01a61b3d5e24b4c009c4dfd8eb6023c9ecaf242",
+  "codec": {
+    "status": "PASS",
+    "modes": 9,
+    "blocks": 54,
+    "encoded_words": 13770,
+    "decoded_words": 10368,
+    "bit_errors": 0
+  },
+  "rrc": {
+    "status": "PASS",
+    "p_values": 3,
+    "output_words": 252,
+    "integer_mismatches": 0
+  },
+  "rx_link": {
+    "coded": {
+      "bits": 48960,
+      "bit_errors": 0,
+      "ber": 0.0
+    },
+    "decoded": {
+      "bits": 36864,
+      "bit_errors": 0,
+      "ber": 0.0
+    },
+    "counts": {
+      "frames": 16,
+      "ldpc_blocks": 96,
+      "ldpc_failed_checks": 0,
+      "ai_recommendations": 12,
+      "overflow_fast": 0,
+      "overflow_ldpc": 0,
+      "ldpc_mode_error": 0,
+      "acquire_error": 0
+    },
+    "mode_evidence": "Aligned algorithm-stage P tags are 2 and coded/decoded widths are 2 (BPSK). Raw detected-M VIO sampling is not independently logged.",
+    "status": "PASS"
+  },
+  "matlab_metrics": {
+    "scope": "16 P2/BPSK frames; fixed sampling phase; Mov_ZF window 5",
+    "fde_fixed_gain": 2,
+    "iq_fraction_bits": {
+      "window": 13,
+      "fde": 13,
+      "nlms": 14
+    },
+    "coded": {
+      "bits": 48960,
+      "bit_errors": 0,
+      "ber": 0
+    },
+    "decoded": {
+      "bits": 36864,
+      "bit_errors": 0,
+      "ber": 0
+    },
+    "frames": 16,
+    "fde_mer_db": [
+      28.55648433872943,
+      30.461457884397042,
+      29.69304553674585,
+      28.792854284506486,
+      29.33365429727873,
+      28.736504150165047,
+      28.855956404292744,
+      30.39263150598828,
+      30.64345732273466,
+      30.66370916001099,
+      29.245963891241765,
+      29.70953274083736,
+      29.25143653977601,
+      28.804217866714517,
+      30.586301061903313,
+      29.690598679387602
+    ],
+    "nlms_mer_db": [
+      30.906104951913022,
+      30.698027728084867,
+      30.964647257207538,
+      30.807103693810127,
+      30.862207800650722,
+      30.861170609295275,
+      30.877969425493728,
+      30.9435652433142,
+      30.999898783922475,
+      30.96229078431299,
+      30.685639217991735,
+      30.79210017731741,
+      30.99610207487947,
+      30.884244850110644,
+      31.03826062961228,
+      30.898721556171385
+    ],
+    "hdl_vs_float_fde_db": [
+      85.10014958280203,
+      84.9713973564799,
+      85.06655978389715,
+      85.24699290146978,
+      84.96239792763097,
+      84.95052437242427,
+      85.42546124449618,
+      85.23026563159844,
+      85.18613141679701,
+      85.14554978624275,
+      84.877616776515,
+      85.2301405957869,
+      85.10902458530859,
+      84.96009236792264,
+      85.02294397746925,
+      84.96585500948498
+    ],
+    "mean_fde_mer_db": 29.588612854044367,
+    "mean_nlms_mer_db": 30.88612842400549,
+    "minimum_hdl_vs_float_fde_db": 84.877616776515
+  },
+  "hardware": {
+    "tx": {
+      "side": "tx",
+      "tool_version": "Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021",
+      "device": "xczu47dr-ffve1156-2-i",
+      "board_execution": "not_performed",
+      "top_resource_utilization": {
+        "CLB LUTs": {
+          "used": 96206.0,
+          "fixed": 0.0,
+          "prohibited": 0.0,
+          "available": 425280.0,
+          "util_percent": 22.62
+        },
+        "CLB Registers": {
+          "used": 121972.0,
+          "fixed": 0.0,
+          "prohibited": 0.0,
+          "available": 850560.0,
+          "util_percent": 14.34
+        },
+        "Block RAM Tile": {
+          "used": 784.0,
+          "fixed": 0.0,
+          "prohibited": 0.0,
+          "available": 1080.0,
+          "util_percent": 72.59
+        },
+        "DSPs": {
+          "used": 924.0,
+          "fixed": 0.0,
+          "prohibited": 0.0,
+          "available": 4272.0,
+          "util_percent": 21.63
+        },
+        "URAM": {
+          "used": 0.0,
+          "fixed": 0.0,
+          "prohibited": 0.0,
+          "available": 80.0,
+          "util_percent": 0.0
+        },
+        "Bonded IOB": {
+          "used": 17.0,
+          "fixed": 17.0,
+          "prohibited": 0.0,
+          "available": 152.0,
+          "util_percent": 11.18
+        }
+      },
+      "timing": {
+        "WNS_ns": 0.059,
+        "TNS_ns": 0.0,
+        "setup_failing_endpoints": 0,
+        "setup_total_endpoints": 371368,
+        "WHS_ns": 0.01,
+        "THS_ns": 0.0,
+        "hold_failing_endpoints": 0,
+        "hold_total_endpoints": 371205,
+        "WPWS_ns": 0.455,
+        "TPWS_ns": 0.0,
+        "pulse_width_failing_endpoints": 0,
+        "pulse_width_total_endpoints": 137444,
+        "official_report_statement": "All user specified timing constraints are met.",
+        "all_reported_setup_hold_pulse_checks_met": true,
+        "check_timing_counts": {
+          "no_clock": 2,
+          "constant_clock": 0,
+          "pulse_width_clock": 0,
+          "unconstrained_internal_endpoints": 2,
+          "no_input_delay": 1,
+          "no_output_delay": 3,
+          "multiple_clock": 0,
+          "generated_clocks": 0,
+          "loops": 0,
+          "partial_input_delay": 0,
+          "partial_output_delay": 0,
+          "latch_loops": 0
+        },
+        "clock_summary": [
+          {
+            "name": "RFADC0_CLK",
+            "waveform_ns": [
+              0.0,
+              1.628
+            ],
+            "period_ns": 3.255,
+            "frequency_MHz": 307.22
+          },
+          {
+            "name": "clk_out1_system_clk_wiz_0_0",
+            "waveform_ns": [
+              0.0,
+              1.221
+            ],
+            "period_ns": 2.441,
+            "frequency_MHz": 409.626
+          },
+          {
+            "name": "clk_out2_system_clk_wiz_0_0",
+            "waveform_ns": [
+              0.0,
+              2.441
+            ],
+            "period_ns": 4.883,
+            "frequency_MHz": 204.813
+          },
+          {
+            "name": "clk_out3_system_clk_wiz_0_0",
+            "waveform_ns": [
+              0.0,
+              12.206
+            ],
+            "period_ns": 24.413,
+            "frequency_MHz": 40.963
+          },
+          {
+            "name": "RFADC1_CLK",
+            "waveform_ns": [
+              0.0,
+              1.628
+            ],
+            "period_ns": 3.255,
+            "frequency_MHz": 307.22
+          },
+          {
+            "name": "RFADC2_CLK",
+            "waveform_ns": [
+              0.0,
+              5.0
+            ],
+            "period_ns": 10.0,
+            "frequency_MHz": 100.0
+          },
+          {
+            "name": "RFADC3_CLK",
+            "waveform_ns": [
+              0.0,
+              5.0
+            ],
+            "period_ns": 10.0,
+            "frequency_MHz": 100.0
+          },
+          {
+            "name": "RFDAC0_CLK",
+            "waveform_ns": [
+              0.0,
+              5.0
+            ],
+            "period_ns": 10.0,
+            "frequency_MHz": 100.0
+          },
+          {
+            "name": "RFDAC1_CLK",
+            "waveform_ns": [
+              0.0,
+              5.0
+            ],
+            "period_ns": 10.0,
+            "frequency_MHz": 100.0
+          },
+          {
+            "name": "RFDAC2_CLK",
+            "waveform_ns": [
+              0.0,
+              1.628
+            ],
+            "period_ns": 3.255,
+            "frequency_MHz": 307.22
+          },
+          {
+            "name": "RFDAC3_CLK",
+            "waveform_ns": [
+              0.0,
+              13.021
+            ],
+            "period_ns": 26.042,
+            "frequency_MHz": 38.4
+          },
+          {
+            "name": "clk_pl_0",
+            "waveform_ns": [
+              0.0,
+              5.0
+            ],
+            "period_ns": 10.0,
+            "frequency_MHz": 100.0
+          },
+          {
+            "name": "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK",
+            "waveform_ns": [
+              0.0,
+              25.0
+            ],
+            "period_ns": 50.0,
+            "frequency_MHz": 20.0
+          },
+          {
+            "name": "gt_refclk_p",
+            "waveform_ns": [
+              0.0,
+              3.2
+            ],
+            "period_ns": 6.4,
+            "frequency_MHz": 156.25
+          },
+          {
+            "name": "qpll0clk_in[0]",
+            "waveform_ns": [
+              0.0,
+              0.097
+            ],
+            "period_ns": 0.194,
+            "frequency_MHz": 5156.25
+          },
+          {
+            "name": "rxoutclk_out[0]",
+            "waveform_ns": [
+              0.0,
+              3.2
+            ],
+            "period_ns": 6.4,
+            "frequency_MHz": 156.25
+          },
+          {
+            "name": "rxoutclk_out[0]_1",
+            "waveform_ns": [
+              0.0,
+              3.2
+            ],
+            "period_ns": 6.4,
+            "frequency_MHz": 156.25
+          },
+          {
+            "name": "txoutclk_out[0]",
+            "waveform_ns": [
+              0.0,
+              3.2
+            ],
+            "period_ns": 6.4,
+            "frequency_MHz": 156.25
+          },
+          {
+            "name": "txoutclk_out[0]_1",
+            "waveform_ns": [
+              0.0,
+              3.2
+            ],
+            "period_ns": 6.4,
+            "frequency_MHz": 156.25
+          },
+          {
+            "name": "txoutclkpcs_out[0]",
+            "waveform_ns": [
+              0.0,
+              3.103
+            ],
+            "period_ns": 6.206,
+            "frequency_MHz": 161.133
+          },
+          {
+            "name": "txoutclkpcs_out[0]_1",
+            "waveform_ns": [
+              0.0,
+              3.103
+            ],
+            "period_ns": 6.206,
+            "frequency_MHz": 161.133
+          },
+          {
+            "name": "qpll0refclk_in[0]",
+            "waveform_ns": [
+              0.0,
+              3.2
+            ],
+            "period_ns": 6.4,
+            "frequency_MHz": 156.25
+          }
+        ],
+        "boundary": "Timing statement applies to the user-specified constraints. Missing clocks/delays and unconstrained endpoints remain visible in check_timing_counts; board execution was not performed."
+      },
+      "drc": {
+        "reported_violations": 1016,
+        "severity_totals": {
+          "Error": 0,
+          "Critical Warning": 0,
+          "Warning": 570,
+          "Advisory": 446
+        },
+        "rules": [
+          {
+            "rule": "DPIP-2",
+            "severity": "Warning",
+            "description": "Input pipelining",
+            "violations": 69
+          },
+          {
+            "rule": "DPOP-3",
+            "severity": "Warning",
+            "description": "PREG Output pipelining",
+            "violations": 31
+          },
+          {
+            "rule": "DPOP-4",
+            "severity": "Warning",
+            "description": "MREG Output pipelining",
+            "violations": 426
+          },
+          {
+            "rule": "DPOR-2",
+            "severity": "Warning",
+            "description": "Asynchronous load check",
+            "violations": 38
+          },
+          {
+            "rule": "PDCN-1569",
+            "severity": "Warning",
+            "description": "LUT equation term check",
+            "violations": 3
+          },
+          {
+            "rule": "REQP-1857",
+            "severity": "Warning",
+            "description": "RAMB18E2_writefirst_collision_advisory",
+            "violations": 2
+          },
+          {
+            "rule": "RTSTAT-10",
+            "severity": "Warning",
+            "description": "No routable loads",
+            "violations": 1
+          },
+          {
+            "rule": "AVAL-155",
+            "severity": "Advisory",
+            "description": "enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND",
+            "violations": 418
+          },
+          {
+            "rule": "AVAL-156",
+            "severity": "Advisory",
+            "description": "enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND",
+            "violations": 14
+          },
+          {
+            "rule": "REQP-1701",
+            "severity": "Advisory",
+            "description": "enum_DREG_0_connects_CED_GND",
+            "violations": 14
+          }
+        ]
+      },
+      "bus_skew": {
+        "constraints_reported": 23,
+        "violating_constraints": 0,
+        "minimum_slack_ns": 1.623,
+        "worst_constraint": {
+          "id": 8,
+          "position": 593,
+          "corner": "Slow",
+          "requirement_ns": 2.441,
+          "actual_ns": 0.818,
+          "slack_ns": 1.623
+        },
+        "detailed_MET_count": 23,
+        "detailed_VIOLATED_count": 0,
+        "constraint_summary": [
+          {
+            "id": 1,
+            "position": 576,
+            "corner": "Slow",
+            "requirement_ns": 2.441,
+            "actual_ns": 0.749,
+            "slack_ns": 1.692
+          },
+          {
+            "id": 2,
+            "position": 578,
+            "corner": "Slow",
+            "requirement_ns": 2.441,
+            "actual_ns": 0.713,
+            "slack_ns": 1.728
+          },
+          {
+            "id": 3,
+            "position": 583,
+            "corner": "Slow",
+            "requirement_ns": 2.441,
+            "actual_ns": 0.739,
+            "slack_ns": 1.702
+          },
+          {
+            "id": 4,
+            "position": 585,
+            "corner": "Slow",
+            "requirement_ns": 2.441,
+            "actual_ns": 0.61,
+            "slack_ns": 1.831
+          },
+          {
+            "id": 5,
+            "position": 587,
+            "corner": "Slow",
+            "requirement_ns": 2.441,
+            "actual_ns": 0.633,
+            "slack_ns": 1.808
+          },
+          {
+            "id": 6,
+            "position": 589,
+            "corner": "Slow",
+            "requirement_ns": 2.441,
+            "actual_ns": 0.53,
+            "slack_ns": 1.911
+          },
+          {
+            "id": 7,
+            "position": 591,
+            "corner": "Slow",
+            "requirement_ns": 2.441,
+            "actual_ns": 0.548,
+            "slack_ns": 1.893
+          },
+          {
+            "id": 8,
+            "position": 593,
+            "corner": "Slow",
+            "requirement_ns": 2.441,
+            "actual_ns": 0.818,
+            "slack_ns": 1.623
+          },
+          {
+            "id": 9,
+            "position": 595,
+            "corner": "Slow",
+            "requirement_ns": 2.441,
+            "actual_ns": 0.714,
+            "slack_ns": 1.727
+          },
+          {
+            "id": 10,
+            "position": 597,
+            "corner": "Slow",
+            "requirement_ns": 2.441,
+            "actual_ns": 0.736,
+            "slack_ns": 1.705
+          },
+          {
+            "id": 11,
+            "position": 605,
+            "corner": "Slow",
+            "requirement_ns": 2.441,
+            "actual_ns": 0.675,
+            "slack_ns": 1.766
+          },
+          {
+            "id": 12,
+            "position": 608,
+            "corner": "Slow",
+            "requirement_ns": 2.441,
+            "actual_ns": 0.706,
+            "slack_ns": 1.735
+          },
+          {
+            "id": 13,
+            "position": 618,
+            "corner": "Slow",
+            "requirement_ns": 6.4,
+            "actual_ns": 0.649,
+            "slack_ns": 5.751
+          },
+          {
+            "id": 14,
+            "position": 620,
+            "corner": "Slow",
+            "requirement_ns": 6.4,
+            "actual_ns": 0.625,
+            "slack_ns": 5.775
+          },
+          {
+            "id": 15,
+            "position": 622,
+            "corner": "Slow",
+            "requirement_ns": 6.4,
+            "actual_ns": 0.459,
+            "slack_ns": 5.941
+          },
+          {
+            "id": 16,
+            "position": 624,
+            "corner": "Slow",
+            "requirement_ns": 6.4,
+            "actual_ns": 0.534,
+            "slack_ns": 5.866
+          },
+          {
+            "id": 17,
+            "position": 626,
+            "corner": "Slow",
+            "requirement_ns": 4.883,
+            "actual_ns": 0.667,
+            "slack_ns": 4.216
+          },
+          {
+            "id": 18,
+            "position": 628,
+            "corner": "Slow",
+            "requirement_ns": 4.883,
+            "actual_ns": 0.794,
+            "slack_ns": 4.089
+          },
+          {
+            "id": 19,
+            "position": 630,
+            "corner": "Slow",
+            "requirement_ns": 4.883,
+            "actual_ns": 0.673,
+            "slack_ns": 4.21
+          },
+          {
+            "id": 20,
+            "position": 835,
+            "corner": "Slow",
+            "requirement_ns": 10.0,
+            "actual_ns": 0.666,
+            "slack_ns": 9.334
+          },
+          {
+            "id": 21,
+            "position": 837,
+            "corner": "Slow",
+            "requirement_ns": 10.0,
+            "actual_ns": 0.477,
+            "slack_ns": 9.523
+          },
+          {
+            "id": 22,
+            "position": 840,
+            "corner": "Slow",
+            "requirement_ns": 10.0,
+            "actual_ns": 0.57,
+            "slack_ns": 9.43
+          },
+          {
+            "id": 23,
+            "position": 842,
+            "corner": "Slow",
+            "requirement_ns": 10.0,
+            "actual_ns": 0.675,
+            "slack_ns": 9.325
+          }
+        ]
+      },
+      "bitstream": {
+        "path": "validation/tx_bit/project/tx.runs/impl_1/adaloop_top.bit",
+        "bytes": 34437473,
+        "sha256": "6b91f51637b52cdab673c58779f5e1dc94eaaecf58c98b161930aec487593386"
+      },
+      "debug_probes": {
+        "path": "validation/tx_bit/project/tx.ltx",
+        "bytes": 603331,
+        "sha256": "77adff12959cd2f45996d62037b27a8cab9a8bfd18c9e6cc9a640896da1dca31"
+      },
+      "hardware_handoff_no_bit": {
+        "path": "validation/tx_bit/project/tx_hardware.xsa",
+        "bytes": 741164,
+        "sha256": "36dad753acd9348ff54e06bd29ae3b9698a3aacdcb97c5ee0f306586443f16fe"
+      },
+      "hardware_handoff_with_bit": {
+        "path": "validation/tx_bit/project/tx_with_bit.xsa",
+        "bytes": 5503651,
+        "sha256": "d63467bcb6ac323c40763779268dda7088848da41cd7e97e94b32c994240934e"
+      },
+      "bitstream_creation_succeeded": true,
+      "xsa_embedded_bitstream": {
+        "member": "tx_with_bit.bit",
+        "sha256": "6b91f51637b52cdab673c58779f5e1dc94eaaecf58c98b161930aec487593386"
+      },
+      "xsa_embedded_bitstream_equals_bit_artifact": true,
+      "status": "BIT_GENERATED",
+      "build_lineage": "New project from the public source/configuration inputs; all delivered EDIF cores bound into the complete synthesis checkpoint; implementation continued from that checkpoint. No private DCP input.",
+      "binary_artifacts_in_repository": false,
+      "reports": {
+        "synthesized_utilization.rpt": {
+          "path": "results/tx/synthesized_utilization.rpt",
+          "raw_tool_output_sha256": "774971b266cd59d1debe75022ce237b357cdf54eb71fc3c1eee298fbda2c231a",
+          "published_sha256": "42e92de688e4198ab93c392b08620aa00d48f6182f868308eaff77a3da8e5b48",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "synthesized_hierarchy.rpt": {
+          "path": "results/tx/synthesized_hierarchy.rpt",
+          "raw_tool_output_sha256": "85d9ee8cdcbc93a09ed472d2fef10e61d3bc214e46dc8d7be414c17114a36870",
+          "published_sha256": "bef03aa085a6c3e88b98a5829aa425ad60825ec9655999b11be230a8b06cc817",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "synthesized_timing.rpt": {
+          "path": "results/tx/synthesized_timing.rpt",
+          "raw_tool_output_sha256": "1b6ed2c66ac5fad6b13bfe0c6d459c295b5b903013e0497512cfc4151f4bff68",
+          "published_sha256": "3f4f8b2c2254d91b1b24c7294d39dfa389ad8bba54488dd952c47d60031f566e",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "routed_utilization.rpt": {
+          "path": "results/tx/routed_utilization.rpt",
+          "raw_tool_output_sha256": "4f8ad8e1aeca06ef018b6ca2ca593fc3e666f0b4c894bceeb7f6783068aca364",
+          "published_sha256": "1050efaecdb56fe260d22a3a9a5e719beb6de6e3c2e8a45ba7aa1203184d5d0b",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "routed_hierarchy.rpt": {
+          "path": "results/tx/routed_hierarchy.rpt",
+          "raw_tool_output_sha256": "7ca40745d3e51b2b93ae648c1ac24404f6ed647bdaf7e99d1641a89a42284419",
+          "published_sha256": "e877b4a1f74137d46a9560a384d9cd1ec77defc9afdb8c60fb060c14b5465e6c",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "routed_timing.rpt": {
+          "path": "results/tx/routed_timing.rpt",
+          "raw_tool_output_sha256": "72fe715eaedbb7e505601ef640e13d2f5ddb397d3420b8ed5ad280218823c503",
+          "published_sha256": "23c7169d13e6e3d0dcd70c399882a4d09e92c61ff6a65f35b106e4bc313a3765",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "routed_drc.rpt": {
+          "path": "results/tx/routed_drc.rpt",
+          "raw_tool_output_sha256": "6d6e871c9105ff60b7e1d284e1622142037c264bd1d3453c9d9bdfc1133d21a3",
+          "published_sha256": "b3ef9a3782434000008fe795d8313ad89e2000e960381eaefd30b559ed010222",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "routed_clock_interaction.rpt": {
+          "path": "results/tx/routed_clock_interaction.rpt",
+          "raw_tool_output_sha256": "0aafec270334c4a97ce39822cd295236475f3462b2cc41ab454154d9601da42b",
+          "published_sha256": "854a244b25b7282fefa0ff85146bee63e9f3cb56c0acba9d2d2d785a17e5a905",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "routed_bus_skew.rpt": {
+          "path": "results/tx/routed_bus_skew.rpt",
+          "raw_tool_output_sha256": "a9f62521284a3998087012b4667a249911ff62709001b46c5aecc82c1c7a9b72",
+          "published_sha256": "7a678c885f384dd928046adc00bfa72353574e2d2ce40535f9bc968214826f35",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        }
+      }
+    },
+    "rx": {
+      "side": "rx",
+      "tool_version": "Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021",
+      "device": "xczu47dr-ffve1156-2-i",
+      "board_execution": "not_performed",
+      "top_resource_utilization": {
+        "CLB LUTs": {
+          "used": 304298.0,
+          "fixed": 0.0,
+          "prohibited": 0.0,
+          "available": 425280.0,
+          "util_percent": 71.55
+        },
+        "CLB Registers": {
+          "used": 245015.0,
+          "fixed": 0.0,
+          "prohibited": 0.0,
+          "available": 850560.0,
+          "util_percent": 28.81
+        },
+        "Block RAM Tile": {
+          "used": 690.5,
+          "fixed": 0.0,
+          "prohibited": 0.0,
+          "available": 1080.0,
+          "util_percent": 63.94
+        },
+        "DSPs": {
+          "used": 2478.0,
+          "fixed": 0.0,
+          "prohibited": 0.0,
+          "available": 4272.0,
+          "util_percent": 58.01
+        },
+        "URAM": {
+          "used": 0.0,
+          "fixed": 0.0,
+          "prohibited": 0.0,
+          "available": 80.0,
+          "util_percent": 0.0
+        },
+        "Bonded IOB": {
+          "used": 17.0,
+          "fixed": 17.0,
+          "prohibited": 0.0,
+          "available": 152.0,
+          "util_percent": 11.18
+        }
+      },
+      "timing": {
+        "WNS_ns": 0.048,
+        "TNS_ns": 0.0,
+        "setup_failing_endpoints": 0,
+        "setup_total_endpoints": 917454,
+        "WHS_ns": 0.009,
+        "THS_ns": 0.0,
+        "hold_failing_endpoints": 0,
+        "hold_total_endpoints": 917310,
+        "WPWS_ns": 0.455,
+        "TPWS_ns": 0.0,
+        "pulse_width_failing_endpoints": 0,
+        "pulse_width_total_endpoints": 282235,
+        "official_report_statement": "All user specified timing constraints are met.",
+        "all_reported_setup_hold_pulse_checks_met": true,
+        "check_timing_counts": {
+          "no_clock": 2,
+          "constant_clock": 0,
+          "pulse_width_clock": 0,
+          "unconstrained_internal_endpoints": 2,
+          "no_input_delay": 1,
+          "no_output_delay": 4,
+          "multiple_clock": 0,
+          "generated_clocks": 0,
+          "loops": 0,
+          "partial_input_delay": 0,
+          "partial_output_delay": 0,
+          "latch_loops": 0
+        },
+        "clock_summary": [
+          {
+            "name": "RFADC0_CLK",
+            "waveform_ns": [
+              0.0,
+              1.628
+            ],
+            "period_ns": 3.255,
+            "frequency_MHz": 307.22
+          },
+          {
+            "name": "clk_out1_system_clk_wiz_0_0",
+            "waveform_ns": [
+              0.0,
+              1.221
+            ],
+            "period_ns": 2.441,
+            "frequency_MHz": 409.626
+          },
+          {
+            "name": "clk_out2_system_clk_wiz_0_0",
+            "waveform_ns": [
+              0.0,
+              2.441
+            ],
+            "period_ns": 4.883,
+            "frequency_MHz": 204.813
+          },
+          {
+            "name": "clk_out1_clk_ldpc_wiz",
+            "waveform_ns": [
+              0.0,
+              1.628
+            ],
+            "period_ns": 3.255,
+            "frequency_MHz": 307.22
+          },
+          {
+            "name": "clk_out3_system_clk_wiz_0_0",
+            "waveform_ns": [
+              0.0,
+              12.206
+            ],
+            "period_ns": 24.413,
+            "frequency_MHz": 40.963
+          },
+          {
+            "name": "RFADC1_CLK",
+            "waveform_ns": [
+              0.0,
+              1.628
+            ],
+            "period_ns": 3.255,
+            "frequency_MHz": 307.22
+          },
+          {
+            "name": "RFADC2_CLK",
+            "waveform_ns": [
+              0.0,
+              5.0
+            ],
+            "period_ns": 10.0,
+            "frequency_MHz": 100.0
+          },
+          {
+            "name": "RFADC3_CLK",
+            "waveform_ns": [
+              0.0,
+              5.0
+            ],
+            "period_ns": 10.0,
+            "frequency_MHz": 100.0
+          },
+          {
+            "name": "RFDAC0_CLK",
+            "waveform_ns": [
+              0.0,
+              5.0
+            ],
+            "period_ns": 10.0,
+            "frequency_MHz": 100.0
+          },
+          {
+            "name": "RFDAC1_CLK",
+            "waveform_ns": [
+              0.0,
+              5.0
+            ],
+            "period_ns": 10.0,
+            "frequency_MHz": 100.0
+          },
+          {
+            "name": "RFDAC2_CLK",
+            "waveform_ns": [
+              0.0,
+              1.628
+            ],
+            "period_ns": 3.255,
+            "frequency_MHz": 307.22
+          },
+          {
+            "name": "RFDAC3_CLK",
+            "waveform_ns": [
+              0.0,
+              13.021
+            ],
+            "period_ns": 26.042,
+            "frequency_MHz": 38.4
+          },
+          {
+            "name": "clk_pl_0",
+            "waveform_ns": [
+              0.0,
+              5.0
+            ],
+            "period_ns": 10.0,
+            "frequency_MHz": 100.0
+          },
+          {
+            "name": "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK",
+            "waveform_ns": [
+              0.0,
+              25.0
+            ],
+            "period_ns": 50.0,
+            "frequency_MHz": 20.0
+          },
+          {
+            "name": "gt_refclk_p",
+            "waveform_ns": [
+              0.0,
+              3.2
+            ],
+            "period_ns": 6.4,
+            "frequency_MHz": 156.25
+          },
+          {
+            "name": "qpll0clk_in[0]",
+            "waveform_ns": [
+              0.0,
+              0.097
+            ],
+            "period_ns": 0.194,
+            "frequency_MHz": 5156.25
+          },
+          {
+            "name": "rxoutclk_out[0]",
+            "waveform_ns": [
+              0.0,
+              3.2
+            ],
+            "period_ns": 6.4,
+            "frequency_MHz": 156.25
+          },
+          {
+            "name": "rxoutclk_out[0]_1",
+            "waveform_ns": [
+              0.0,
+              3.2
+            ],
+            "period_ns": 6.4,
+            "frequency_MHz": 156.25
+          },
+          {
+            "name": "txoutclk_out[0]",
+            "waveform_ns": [
+              0.0,
+              3.2
+            ],
+            "period_ns": 6.4,
+            "frequency_MHz": 156.25
+          },
+          {
+            "name": "txoutclk_out[0]_1",
+            "waveform_ns": [
+              0.0,
+              3.2
+            ],
+            "period_ns": 6.4,
+            "frequency_MHz": 156.25
+          },
+          {
+            "name": "txoutclkpcs_out[0]",
+            "waveform_ns": [
+              0.0,
+              3.103
+            ],
+            "period_ns": 6.206,
+            "frequency_MHz": 161.133
+          },
+          {
+            "name": "txoutclkpcs_out[0]_1",
+            "waveform_ns": [
+              0.0,
+              3.103
+            ],
+            "period_ns": 6.206,
+            "frequency_MHz": 161.133
+          },
+          {
+            "name": "qpll0refclk_in[0]",
+            "waveform_ns": [
+              0.0,
+              3.2
+            ],
+            "period_ns": 6.4,
+            "frequency_MHz": 156.25
+          }
+        ],
+        "boundary": "Timing statement applies to the user-specified constraints. Missing clocks/delays and unconstrained endpoints remain visible in check_timing_counts; board execution was not performed."
+      },
+      "drc": {
+        "reported_violations": 3659,
+        "severity_totals": {
+          "Error": 0,
+          "Critical Warning": 0,
+          "Warning": 3083,
+          "Advisory": 576
+        },
+        "rules": [
+          {
+            "rule": "DPIP-2",
+            "severity": "Warning",
+            "description": "Input pipelining",
+            "violations": 1460
+          },
+          {
+            "rule": "DPOP-3",
+            "severity": "Warning",
+            "description": "PREG Output pipelining",
+            "violations": 375
+          },
+          {
+            "rule": "DPOP-4",
+            "severity": "Warning",
+            "description": "MREG Output pipelining",
+            "violations": 1234
+          },
+          {
+            "rule": "PDCN-1569",
+            "severity": "Warning",
+            "description": "LUT equation term check",
+            "violations": 3
+          },
+          {
+            "rule": "REQP-1934",
+            "severity": "Warning",
+            "description": "RAMB18E2_nochange_collision_advisory",
+            "violations": 1
+          },
+          {
+            "rule": "REQP-1935",
+            "severity": "Warning",
+            "description": "RAMB36E2_nochange_collision_advisory",
+            "violations": 9
+          },
+          {
+            "rule": "RTSTAT-10",
+            "severity": "Warning",
+            "description": "No routable loads",
+            "violations": 1
+          },
+          {
+            "rule": "AVAL-155",
+            "severity": "Advisory",
+            "description": "enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND",
+            "violations": 144
+          },
+          {
+            "rule": "AVAL-156",
+            "severity": "Advisory",
+            "description": "enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND",
+            "violations": 144
+          },
+          {
+            "rule": "REQP-1669",
+            "severity": "Advisory",
+            "description": "enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND",
+            "violations": 72
+          },
+          {
+            "rule": "REQP-1673",
+            "severity": "Advisory",
+            "description": "enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND",
+            "violations": 72
+          },
+          {
+            "rule": "REQP-1678",
+            "severity": "Advisory",
+            "description": "enum_CREG_0_connects_CEC_GND",
+            "violations": 72
+          },
+          {
+            "rule": "REQP-1680",
+            "severity": "Advisory",
+            "description": "enum_PREG_0_connects_CEP_GND",
+            "violations": 72
+          }
+        ]
+      },
+      "bus_skew": {
+        "constraints_reported": 15,
+        "violating_constraints": 0,
+        "minimum_slack_ns": 1.708,
+        "worst_constraint": {
+          "id": 2,
+          "position": 182,
+          "corner": "Slow",
+          "requirement_ns": 2.441,
+          "actual_ns": 0.733,
+          "slack_ns": 1.708
+        },
+        "detailed_MET_count": 15,
+        "detailed_VIOLATED_count": 0,
+        "constraint_summary": [
+          {
+            "id": 1,
+            "position": 180,
+            "corner": "Slow",
+            "requirement_ns": 2.441,
+            "actual_ns": 0.61,
+            "slack_ns": 1.831
+          },
+          {
+            "id": 2,
+            "position": 182,
+            "corner": "Slow",
+            "requirement_ns": 2.441,
+            "actual_ns": 0.733,
+            "slack_ns": 1.708
+          },
+          {
+            "id": 3,
+            "position": 185,
+            "corner": "Slow",
+            "requirement_ns": 4.882,
+            "actual_ns": 0.689,
+            "slack_ns": 4.193
+          },
+          {
+            "id": 4,
+            "position": 187,
+            "corner": "Slow",
+            "requirement_ns": 4.882,
+            "actual_ns": 0.575,
+            "slack_ns": 4.307
+          },
+          {
+            "id": 5,
+            "position": 225,
+            "corner": "Slow",
+            "requirement_ns": 4.883,
+            "actual_ns": 1.113,
+            "slack_ns": 3.77
+          },
+          {
+            "id": 6,
+            "position": 227,
+            "corner": "Slow",
+            "requirement_ns": 4.883,
+            "actual_ns": 1.006,
+            "slack_ns": 3.877
+          },
+          {
+            "id": 7,
+            "position": 229,
+            "corner": "Slow",
+            "requirement_ns": 10.0,
+            "actual_ns": 1.039,
+            "slack_ns": 8.961
+          },
+          {
+            "id": 8,
+            "position": 231,
+            "corner": "Slow",
+            "requirement_ns": 4.883,
+            "actual_ns": 2.047,
+            "slack_ns": 2.836
+          },
+          {
+            "id": 9,
+            "position": 233,
+            "corner": "Slow",
+            "requirement_ns": 4.883,
+            "actual_ns": 1.141,
+            "slack_ns": 3.742
+          },
+          {
+            "id": 10,
+            "position": 235,
+            "corner": "Slow",
+            "requirement_ns": 4.883,
+            "actual_ns": 0.874,
+            "slack_ns": 4.009
+          },
+          {
+            "id": 11,
+            "position": 241,
+            "corner": "Slow",
+            "requirement_ns": 19.2,
+            "actual_ns": 1.21,
+            "slack_ns": 17.99
+          },
+          {
+            "id": 12,
+            "position": 437,
+            "corner": "Slow",
+            "requirement_ns": 4.883,
+            "actual_ns": 0.602,
+            "slack_ns": 4.281
+          },
+          {
+            "id": 13,
+            "position": 439,
+            "corner": "Slow",
+            "requirement_ns": 4.883,
+            "actual_ns": 0.732,
+            "slack_ns": 4.151
+          },
+          {
+            "id": 14,
+            "position": 442,
+            "corner": "Slow",
+            "requirement_ns": 4.883,
+            "actual_ns": 0.505,
+            "slack_ns": 4.378
+          },
+          {
+            "id": 15,
+            "position": 444,
+            "corner": "Slow",
+            "requirement_ns": 4.883,
+            "actual_ns": 0.547,
+            "slack_ns": 4.336
+          }
+        ]
+      },
+      "bitstream": {
+        "path": "validation/rx_bit/project/rx.runs/impl_1/adaloop_top.bit",
+        "bytes": 34437473,
+        "sha256": "19a62288a09be12524643b31bd17c2966b17051ca674e7c0144d4c158b57e0b4"
+      },
+      "debug_probes": {
+        "path": "validation/rx_bit/project/rx.ltx",
+        "bytes": 108645,
+        "sha256": "d52769608d5f592f92f320519f6c85fb091a9f40bb27242cbd4da7241280cca1"
+      },
+      "hardware_handoff_no_bit": {
+        "path": "validation/rx_bit/project/rx_hardware.xsa",
+        "bytes": 741163,
+        "sha256": "5bf4646deacf32b05075c8d8daeb171c08b4d0c4ac9c16a23da86861e7d24a0b"
+      },
+      "hardware_handoff_with_bit": {
+        "path": "validation/rx_bit/project/rx_with_bit.xsa",
+        "bytes": 12058912,
+        "sha256": "1b2cbdf8e6bc1325765621a47aaf3e42a1ff16b20424ad90adbceceff98feb83"
+      },
+      "bitstream_creation_succeeded": true,
+      "xsa_embedded_bitstream": {
+        "member": "rx_with_bit.bit",
+        "sha256": "19a62288a09be12524643b31bd17c2966b17051ca674e7c0144d4c158b57e0b4"
+      },
+      "xsa_embedded_bitstream_equals_bit_artifact": true,
+      "status": "BIT_GENERATED",
+      "build_lineage": "New project from the public source/configuration inputs; all delivered EDIF cores bound into the complete synthesis checkpoint; implementation continued from that checkpoint. No private DCP input.",
+      "binary_artifacts_in_repository": false,
+      "reports": {
+        "synthesized_utilization.rpt": {
+          "path": "results/rx/synthesized_utilization.rpt",
+          "raw_tool_output_sha256": "1c5666129c885606b714cb497672461a5fcb2c5d541d37685374e871333b998a",
+          "published_sha256": "8a6342a908ada552c8b99be9d70c933c4f4b1a04a295d8b0976d8e92de1bdca0",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "synthesized_hierarchy.rpt": {
+          "path": "results/rx/synthesized_hierarchy.rpt",
+          "raw_tool_output_sha256": "4aea5ef3ab0276bb216087d9379d87e0d8eb4643d907284524aa52537312c5bc",
+          "published_sha256": "d82d6c2a6a0b58dfc12f0ac8b3e391a9fb3f8ef3b777232ea016c0c3b95a596b",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "synthesized_timing.rpt": {
+          "path": "results/rx/synthesized_timing.rpt",
+          "raw_tool_output_sha256": "92f0d26b0d98bec0536914136df114df2606e58ab5c1e7c518e64938a7e0006a",
+          "published_sha256": "ee011b2a56d56aa64f4f98f91ae678c67b261311faaae1c10a3dddc0aae0c3ef",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "routed_utilization.rpt": {
+          "path": "results/rx/routed_utilization.rpt",
+          "raw_tool_output_sha256": "a3674ceb789e5e5d83570db21beada23bb7c63173008c8aebe3c8430e268bced",
+          "published_sha256": "e0e85bd255d281c998cb37f7181d5ed4d6c5b464760d65812281ca9cc6face3d",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "routed_hierarchy.rpt": {
+          "path": "results/rx/routed_hierarchy.rpt",
+          "raw_tool_output_sha256": "2c271cb7ae28f196aa6be827a1e7d798c184726ead9f959f0a9463597d2f2c13",
+          "published_sha256": "37f3bc0332d2d7dc146fe61734f9a15bac27864706b328ab8c65c685c800372e",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "routed_timing.rpt": {
+          "path": "results/rx/routed_timing.rpt",
+          "raw_tool_output_sha256": "e761099159d609dafda49ecd796745fd4633cd324c018c2b471e4f492bd3c554",
+          "published_sha256": "4345daa7711fafbd75acb50e2f0824baeb60548f3d685d03a4d5a604fc70ee3f",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "routed_drc.rpt": {
+          "path": "results/rx/routed_drc.rpt",
+          "raw_tool_output_sha256": "1b917ffb92cfba9de2b54146888545da1ead0f70680d0707e8f46b67933b8f3e",
+          "published_sha256": "67e0fce1e4bbdce6f15a0d77755e32fe760ef00e06e7c809d744b2b20c92748e",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "routed_clock_interaction.rpt": {
+          "path": "results/rx/routed_clock_interaction.rpt",
+          "raw_tool_output_sha256": "0b2214fc4c28e5707e54439fdc7b7639bc06e9fba93468f00ef0b65670d152f3",
+          "published_sha256": "7d656aa85efeb8092be9ff1685c750cdc04c4244ee0dfc490038758e3eaece9b",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        },
+        "routed_bus_skew.rpt": {
+          "path": "results/rx/routed_bus_skew.rpt",
+          "raw_tool_output_sha256": "b9bec02ce809bf937f6f0162bf8d9045dc5e377f7c262d64a819873f94cd3d60",
+          "published_sha256": "2aee6e85d60d3b6e3991d2284f9329f17a5f6093a8df3a6eba88a2dc1ae90487",
+          "normalization": "Output paths and host only; numerical contents unchanged."
+        }
+      }
+    }
+  },
+  "software": {
+    "tx": {
+      "side": "tx",
+      "status": "application_build_pass",
+      "tool_version_raw": "xsct 2021.2.0\nSW Build 0 on \nCopyright 1986-2020 Xilinx, Inc. All Rights Reserved.",
+      "processor": "psu_cortexa53_0",
+      "os": "standalone",
+      "arch": "64-bit",
+      "compiler_comment": "String dump of section '.comment':\n  [     0]  GCC: (GNU) 10.2.0",
+      "actual_compile_define_RFDC_PROFILE": 0,
+      "board_execution": "not_performed",
+      "elf": {
+        "path": "validation/vitis_tx/artifacts/tx_init.elf",
+        "bytes": 2474576,
+        "sha256": "7adef856c4e98503300eeaace0e72b94c80698544abca9d02b09b8f9eeca866f"
+      },
+      "application_elf": {
+        "path": "validation/vitis_tx/rf_tx_init/Debug/rf_tx_init.elf",
+        "bytes": 2474576,
+        "sha256": "7adef856c4e98503300eeaace0e72b94c80698544abca9d02b09b8f9eeca866f"
+      },
+      "exported_elf_equals_application_elf": true,
+      "source_directory": "software/board/tx",
+      "imported_source_directory": "validation/vitis_tx/rf_tx_init/src",
+      "source_files": 21,
+      "source_tree_hash_method": "SHA256 of UTF-8 sorted lines: per-file SHA256, two spaces, POSIX relative path, LF; all files beneath role source directory",
+      "source_tree_sha256": "15bca70d6f8b0594dde831f51e1ac70128c61c13a61ccec98493b71a8f0b9fa1",
+      "imported_expected_source_tree_sha256": "15bca70d6f8b0594dde831f51e1ac70128c61c13a61ccec98493b71a8f0b9fa1",
+      "all_delivered_source_files_equal_imported_build_sources": true,
+      "xsa_used_by_build": {
+        "path": "validation/tx_bit/project/tx_hardware.xsa",
+        "bytes": 741164,
+        "sha256": "36dad753acd9348ff54e06bd29ae3b9698a3aacdcb97c5ee0f306586443f16fe"
+      },
+      "platform_imported_xsa": {
+        "path": "validation/vitis_tx/rf_tx_platform/hw/tx_hardware.xsa",
+        "bytes": 741164,
+        "sha256": "36dad753acd9348ff54e06bd29ae3b9698a3aacdcb97c5ee0f306586443f16fe"
+      },
+      "hardware_handoff_equals_platform_import": true,
+      "binary_artifacts_in_repository": false
+    },
+    "rx": {
+      "side": "rx",
+      "status": "application_build_pass",
+      "tool_version_raw": "xsct 2021.2.0\nSW Build 0 on \nCopyright 1986-2020 Xilinx, Inc. All Rights Reserved.",
+      "processor": "psu_cortexa53_0",
+      "os": "standalone",
+      "arch": "64-bit",
+      "compiler_comment": "String dump of section '.comment':\n  [     0]  GCC: (GNU) 10.2.0",
+      "actual_compile_define_RFDC_PROFILE": 1,
+      "board_execution": "not_performed",
+      "elf": {
+        "path": "validation/vitis_rx/artifacts/rx_init.elf",
+        "bytes": 2474576,
+        "sha256": "c84960564c5a4c41c1fde6da9cc343705ff929af55474336bfcc3b507407a215"
+      },
+      "application_elf": {
+        "path": "validation/vitis_rx/rf_rx_init/Debug/rf_rx_init.elf",
+        "bytes": 2474576,
+        "sha256": "c84960564c5a4c41c1fde6da9cc343705ff929af55474336bfcc3b507407a215"
+      },
+      "exported_elf_equals_application_elf": true,
+      "source_directory": "software/board/rx",
+      "imported_source_directory": "validation/vitis_rx/rf_rx_init/src",
+      "source_files": 21,
+      "source_tree_hash_method": "SHA256 of UTF-8 sorted lines: per-file SHA256, two spaces, POSIX relative path, LF; all files beneath role source directory",
+      "source_tree_sha256": "15bca70d6f8b0594dde831f51e1ac70128c61c13a61ccec98493b71a8f0b9fa1",
+      "imported_expected_source_tree_sha256": "15bca70d6f8b0594dde831f51e1ac70128c61c13a61ccec98493b71a8f0b9fa1",
+      "all_delivered_source_files_equal_imported_build_sources": true,
+      "xsa_used_by_build": {
+        "path": "validation/rx_bit/project/rx_hardware.xsa",
+        "bytes": 741163,
+        "sha256": "5bf4646deacf32b05075c8d8daeb171c08b4d0c4ac9c16a23da86861e7d24a0b"
+      },
+      "platform_imported_xsa": {
+        "path": "validation/vitis_rx/rf_rx_platform/hw/rx_hardware.xsa",
+        "bytes": 741163,
+        "sha256": "5bf4646deacf32b05075c8d8daeb171c08b4d0c4ac9c16a23da86861e7d24a0b"
+      },
+      "hardware_handoff_equals_platform_import": true,
+      "binary_artifacts_in_repository": false
+    }
+  },
+  "not_established": [
+    "All-nine-mode complete receiver regression and arbitrary dynamic-switch coverage for this public variant.",
+    "Public-variant board/RF tests, Ethernet business streaming and two-board closed-loop feedback.",
+    "AI recommendation accuracy or retraining.",
+    "Timing of unconstrained endpoints or missing-clock/delay paths.",
+    "Original behavioral RTL recovery resistance or cryptographic protection."
+  ],
+  "software_handoff": "results/software/handoff.json"
+}

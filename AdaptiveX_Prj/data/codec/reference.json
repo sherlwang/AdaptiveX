@@ -1,0 +1,10 @@
+{
+  "seed": 260726,
+  "blocks": 54,
+  "modes": 9,
+  "blocks_per_mode": 6,
+  "input_clocks_per_block": 192,
+  "coded_clocks_per_block": 255,
+  "bit_order": "least significant bit first",
+  "reference": "MATLAB QC LDPC encode; frozen integer vectors"
+}

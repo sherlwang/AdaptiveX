@@ -1,0 +1,12 @@
+{
+  "include": [
+    "README.md"
+  ],
+  "exclude": [
+    "**/.git/**",
+    "**/__pycache__/**",
+    "**/.Xil/**",
+    "**/*.jou",
+    "**/*.log"
+  ]
+}
