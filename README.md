@@ -1,15 +1,8 @@
-<!-- AdaptiveX publication entry -->
-## 完整工程下载
+## 当前上传状态
 
-本页提供源码、Skill、技术文档与代码包的浏览入口。已完成综合/实现的 Tx/Rx 工程和原生 Vitis 工作区随本版 Release 提供，下载后保持原相对目录。
+本轮先验证上传通路。仓库已提供可浏览的源码、Skill、技术文档和代码包；已完成综合/实现的 Tx/Rx 工程及原生 Vitis 工作区将在完整 Release 提供。完整附件尚未发布时，可按工程内的源重建入口使用代码。
 
-[下载本版完整工程](https://github.com/sherlwang/AdaptiveX/releases/tag/preview-855214a315d6)，或在本仓库目录执行：
-
-```bash
-python3 skill/sherl-github-project-publish/scripts/receive_submission.py --repo sherlwang/AdaptiveX --tag preview-855214a315d6 --output /path/to/AdaptiveX_Submission
-```
-
-输出目录须为空。脚本下载全部附件、核对 SHA-256 并恢复文件。GitHub 自动生成的源码 ZIP 只包含可浏览文件；完整工程使用上述 Release 附件。
+[查看发布版本](https://github.com/sherlwang/AdaptiveX/releases)
 
 ---
 

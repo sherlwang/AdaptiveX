@@ -1976,19 +1976,14 @@
       "sha256": "e00750b968b0d2bc08b8e7c3793ff73477ae476b920653b2188e44ca785614e7"
     },
     {
-      "bytes": 5288,
+      "bytes": 4898,
       "path": "README.md",
-      "sha256": "6ed61ca7b088fd62cfda4a6e9cbb152dafb4ceb6a382b12af8defdbbc61b5bfb"
+      "sha256": "c4a2e1ab647eb7ec908b1f8b054998bf3ea414449b677be164ecf7c8905161ef"
     },
     {
-      "bytes": 2014530,
-      "path": "SUBMISSION_RELEASE.json",
-      "sha256": "f1bb5708301088d381dcdc89f6a51ff393524fad030161854673969c4295abe3"
-    },
-    {
-      "bytes": 43728318,
+      "bytes": 43728668,
       "path": "adaptivex_code.rar",
-      "sha256": "9356509bb39c305f86f3ab20a629a5079c319fc942181c7f5dfaa5bb05497e81"
+      "sha256": "88ab17313b3a722085b668ff79a01f8014279055d75cd86fc01172e9b1c0d129"
     },
     {
       "bytes": 1706,
@@ -2001,9 +1996,9 @@
       "sha256": "1788b40e7eaf168be77d4693b472a85e1f96055db55372d1b95cd1ba61cdb675"
     },
     {
-      "bytes": 4545,
+      "bytes": 4640,
       "path": "skill/sherl-github-project-publish/SKILL.md",
-      "sha256": "4316b94f08e9db33c30c02e4828897f2def96334155ed90ccbd93664ab07347a"
+      "sha256": "e010214e70bee1ec8376f66ee093a3bf1d27109acca7e98b3ece59a676339e68"
     },
     {
       "bytes": 1153,
@@ -2036,9 +2031,9 @@
       "sha256": "1b55eedd193da3564b16647a8c8345fd16859b622849a402b34c89fa52f7508e"
     },
     {
-      "bytes": 23886,
+      "bytes": 25100,
       "path": "skill/sherl-github-project-publish/scripts/publish_submission.py",
-      "sha256": "213527404b9fa977fbf58eebed9d5f44c8739b7d616b4f5d8fef8e38652f671d"
+      "sha256": "b0ddc44781196578b79e6d2ebcb39587dddf7e15f8a957b4809cc1af0153bd42"
     },
     {
       "bytes": 10375,

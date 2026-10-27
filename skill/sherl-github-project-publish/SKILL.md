@@ -54,6 +54,8 @@ README 提供本版 Release 和[下载恢复脚本](scripts/receive_submission.p
 
 脚本在 Submission 之外的 `~/.cache/adaptivex-publish/` 准备文件、保存独立发布仓库和执行记录。不要把该工作目录放进 Submission。Git 身份和认证助手仅作用于发布仓库或本次子进程，不改全局 Git 设置。
 
+大附件上传不设置 1 小时截止，上传阶段与收据保存在独立工作目录。
+
 每版按公开文件内容确定标签。先上传 Git 提交和 draft 附件，核对大小、SHA-256 及标签所指提交，再公开 Release；试传标为 prerelease，正式版标为 latest。已上传的相同版本不重复发布，新版保留旧版历史。网络中断后按已完成步骤继续，遇到摘要冲突、错误远端或人工未提交改动时说明实际状态，不覆盖它们。
 
 ## 4. 完成判定

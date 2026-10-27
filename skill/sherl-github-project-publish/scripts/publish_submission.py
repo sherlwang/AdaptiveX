@@ -116,7 +116,21 @@ class GitHub:
         return user
 
     def release(self, tag):
-        return self.api(f'repos/{self.repo}/releases/tags/{tag}', missing=True)
+        release = self.api(f'repos/{self.repo}/releases/tags/{tag}', missing=True)
+        if release is not None:
+            return release
+        # The by-tag endpoint does not return unpublished drafts without an actual Git tag.
+        page = 1
+        while True:
+            releases = self.api(f'repos/{self.repo}/releases?per_page=100&page={page}')
+            drafts = [item for item in releases if item['draft'] and item['tag_name'] == tag]
+            if len(drafts) > 1:
+                raise PublishError('Multiple draft Releases use this tag; no assets were replaced.')
+            if drafts:
+                return self.api(f'repos/{self.repo}/releases/{drafts[0]["id"]}')
+            if len(releases) < 100:
+                return None
+            page += 1
 
     def tag_commit(self, tag, *, missing=False):
         reference = self.api(f'repos/{self.repo}/git/ref/tags/{tag}', missing=missing)
@@ -317,6 +331,8 @@ def publish_release(gh: GitHub, plan: dict, commit: str, work: Path, preview: bo
             arguments.append('--prerelease')
         gh.command(*arguments)
         release = gh.release(tag)
+        if release is None:
+            raise PublishError('Draft Release creation returned, but the authenticated lookup could not find it. The pushed Git commit was retained.')
     if release.get('target_commitish') != commit:
         # Do not repoint a published tag or reuse another release's name.
         raise PublishError('Existing Release is bound to a different Git commit; no tag or asset was replaced.')
@@ -332,8 +348,10 @@ def publish_release(gh: GitHub, plan: dict, commit: str, work: Path, preview: bo
                 raise PublishError('Published Release is missing an asset; it will not be overwritten.')
             progress('release_asset_uploading', asset=local['name'], bytes=local['bytes'],
                      completed_count=position, total_count=len(plan['assets']))
-            gh.command('release', 'upload', tag, local['path'], '--repo', gh.repo)
+            gh.command('release', 'upload', tag, local['path'], '--repo', gh.repo, timeout=None)
             release = gh.release(tag)
+            if release is None:
+                raise PublishError('Release could not be found after uploading an asset; the completed Git push was retained.')
         verify_asset(gh, release, local, work)
         progress('release_asset_verified', asset=local['name'], bytes=local['bytes'],
                  completed_count=position + 1, total_count=len(plan['assets']))
@@ -345,6 +363,8 @@ def publish_release(gh: GitHub, plan: dict, commit: str, work: Path, preview: bo
         release = gh.api(f'repos/{gh.repo}/releases/{release["id"]}', method='PATCH', payload={
             'draft': False, 'prerelease': preview, 'make_latest': 'false' if preview else 'true'})
     release = gh.release(tag)
+    if release is None:
+        raise PublishError('Release could not be found after publication; inspect the recorded Git commit and draft state before retrying.')
     if release['draft'] or bool(release['prerelease']) != preview or gh.tag_commit(tag) != commit:
         raise PublishError('Published Release status or tag target did not match this snapshot.')
     verified = [verify_asset(gh, release, local, work) for local in plan['assets']]
